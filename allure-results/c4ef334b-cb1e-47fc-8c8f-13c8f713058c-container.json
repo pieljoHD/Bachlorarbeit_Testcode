@@ -1,0 +1,1 @@
+{"uuid":"c4ef334b-cb1e-47fc-8c8f-13c8f713058c","name":"ios.loginTestID_IOS","children":["b6a3cd8d-5e77-40aa-8b85-faa81b0fb2d3"],"befores":[],"afters":[{"name":"closeApp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1728895457911,"stop":1728895459005}],"start":1728895450108,"stop":1728895474229}

@@ -1,0 +1,1 @@
+{"uuid":"d16e8880-9ac6-4e12-903a-4c5fc2302576","name":"Smoke Tests Android","children":["e4089db4-a8f7-4f62-8fa9-d5ccbcffb2f4"],"befores":[],"afters":[{"name":"quitDriverSession","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1728894829581,"stop":1728894829581}],"start":1728894814379,"stop":1728894829581}

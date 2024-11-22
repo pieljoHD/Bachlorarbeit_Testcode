@@ -1,0 +1,1 @@
+{"uuid":"e182b0c4-d00b-4790-9d88-a467004fba33","name":"android.LoginTestAndroid","children":["7041de11-3221-4a90-b3ab-a70cc8b9f453"],"befores":[{"name":"initiateDriverSession","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1728894870758,"stop":1728894870758}],"afters":[],"start":1728894870741,"stop":1728894885475}

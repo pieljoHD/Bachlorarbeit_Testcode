@@ -1,0 +1,7 @@
+Start Server: appium server --use-plugins=device-farm -pa /wd/hub --plugin-device-farm-platform=both
+adbFolder: /Users/johannespielmeier/Library/Android/sdk/platform-tools
+
+getBundleIdAndroid:
+    1. cd /Users/johannespielmeier/Library/Android/sdk/platform-tools
+    2. ./adb shell
+    3. dumpsys window displays | grep -E 'mCurrentFocus'

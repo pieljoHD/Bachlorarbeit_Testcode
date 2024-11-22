@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke Tests ios" configfailurepolicy="continue" verbose="10" preserve-order="true" parallel="classes">
+
+    <test name="login" preserve-order="true">
+        <classes>
+            <class name="ios.loginTestPath_IOS"/>
+            <class name="ios.loginTest_IOS"/>
+            <class name="ios.loginTestID_IOS"/>
+        </classes>
+    </test>
+
+</suite>
