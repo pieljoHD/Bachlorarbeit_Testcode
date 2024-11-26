@@ -2,7 +2,6 @@ package org.example.android;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
@@ -32,16 +31,15 @@ public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
     }
 
     public void todoHasTodo(String text, int index) {
-        Assert.assertSame(getElement(todoNr(index)).getAttribute("text"), text);
+        Assert.assertEquals(getElement(todoNr(index)).getAttribute("text"), text);
     }
     public void todoHasNotTodo(String text, int index) {
-        Assert.assertNotSame(getElement(todoNr(index)).getAttribute("text"), text);
+        Assert.assertNotEquals(getElement(todoNr(index)).getAttribute("text"), text);
     }
 
     public void changeTodoAndSave(String text, int index) {
         click(todoNr(index));
-        WebElement inputField = driver.findElement(By.id("changeTodoInput"));
-        inputField.sendKeys("test123455");
+        sendKeys(InputTodoChangeField, text);
         click(SaveTodoChangeButton);
         todoHasTodo(text, index);
     }

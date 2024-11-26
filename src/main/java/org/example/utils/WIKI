@@ -5,3 +5,5 @@ getBundleIdAndroid:
     1. cd /Users/johannespielmeier/Library/Android/sdk/platform-tools
     2. ./adb shell
     3. dumpsys window displays | grep -E 'mCurrentFocus'
+
+devicefarm at http://127.0.0.1:4723/device-farm/

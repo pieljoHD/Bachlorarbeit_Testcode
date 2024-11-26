@@ -2,18 +2,12 @@ package org.example.utils;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Map;
-
-import static io.appium.java_client.proxy.Helpers.createProxy;
 
 public class AppiumDriverBuilder {
 
@@ -42,6 +36,7 @@ public class AppiumDriverBuilder {
         //caps.setCapability("appium:fullReset", true);
         caps.setCapability("appium:appPackage", "com.example.todolisttestapplication");
         caps.setCapability("appium:appActivity", "com.example.todolisttestapplication.MainActivity");
+        caps.setCapability("appium:disableIdLocatorAutocompletion", true);
         driver = new AndroidDriver(getHubUrl(), caps);
         System.out.println(driver.getSessionId());
 
