@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM
+        "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke Tests Android" configfailurepolicy="continue" verbose="10" parallel="classes">
+    <listeners>
+        <listener class-name="utils.ExecutionTimeListener"/>
+    </listeners>
+    <test name="Android Tests">
+        <classes>
+            <!--<class name="android.AddManyTodos"/>-->
+            <class name="android.AddAndChangeTodos"/>
+        </classes>
+    </test>
+</suite>

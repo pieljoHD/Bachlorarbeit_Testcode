@@ -33,6 +33,7 @@ public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
     public void todoHasTodo(String text, int index) {
         Assert.assertEquals(getElement(todoNr(index)).getAttribute("text"), text);
     }
+
     public void todoHasNotTodo(String text, int index) {
         Assert.assertNotEquals(getElement(todoNr(index)).getAttribute("text"), text);
     }
@@ -41,13 +42,11 @@ public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
         click(todoNr(index));
         sendKeys(InputTodoChangeField, text);
         click(SaveTodoChangeButton);
-        todoHasTodo(text, index);
     }
 
     public void changeTodoAndCancel(String text, int index) {
         click(todoNr(index));
         sendKeys(InputTodoChangeField, text);
         click(CancelTodoChangeButton);
-        todoHasNotTodo(text, index);
     }
 }

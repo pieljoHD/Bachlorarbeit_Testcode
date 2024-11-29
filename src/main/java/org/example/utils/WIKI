@@ -1,4 +1,5 @@
-Start Server: appium server --use-plugins=device-farm -pa /wd/hub --plugin-device-farm-platform=both
+Start Server with Plugin: appium server --use-plugins=device-farm -pa /wd/hub --plugin-device-farm-platform=both
+Start Server without Plugin: appium server -pa /wd/hub --plugin-device-farm-platform=both
 adbFolder: /Users/johannespielmeier/Library/Android/sdk/platform-tools
 
 getBundleIdAndroid:
