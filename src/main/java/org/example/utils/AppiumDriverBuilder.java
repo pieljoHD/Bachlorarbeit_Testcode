@@ -5,7 +5,6 @@ import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -31,19 +30,19 @@ public class AppiumDriverBuilder {
         return caps;
     }
 
-    public AndroidDriver installAndroidAppAndGetDriver() throws IOException {
+    public AndroidDriver installAndroidAppAndGetDriver() {
         caps = setDefaultAndroidCapabilities(caps);
         //caps.setCapability("appium:fullReset", true);
         caps.setCapability("appium:appPackage", "com.example.todolisttestapplication");
         caps.setCapability("appium:appActivity", "com.example.todolisttestapplication.MainActivity");
-        caps.setCapability("appium:disableIdLocatorAutocompletion", true);
+        //caps.setCapability("appium:disableIdLocatorAutocompletion", true);
         driver = new AndroidDriver(getHubUrl(), caps);
         System.out.println(driver.getSessionId());
 
         return driver;
     }
 
-    public IOSDriver getDriverIOSSession() throws IOException {
+    public IOSDriver getDriverIOSSession() {
         return new IOSDriver(getHubUrl(), getIOSDefaultCapabilities());
     }
 
