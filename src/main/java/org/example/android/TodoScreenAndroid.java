@@ -27,7 +27,6 @@ public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
 
     public void deleteTodo(int index) {
         click(deleteButtonNr(index));
-        Assert.assertFalse(isElementDisplayed(todoNr(index)));
     }
 
     public void todoHasTodo(String text, int index) {

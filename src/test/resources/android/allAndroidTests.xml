@@ -8,7 +8,8 @@
     <test name="Android Tests">
         <classes>
             <!--<class name="android.AddManyTodos"/>-->
-            <class name="android.AddAndChangeTodos"/>
+            <!--<class name="android.AddAndChangeTodos"/>-->
+            <class name="android.AddAndDeleteTodos"/>
         </classes>
     </test>
 </suite>
