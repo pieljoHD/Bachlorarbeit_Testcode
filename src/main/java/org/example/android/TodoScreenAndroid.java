@@ -12,9 +12,14 @@ public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
     private final By CancelTodoChangeButton = By.xpath("//*[@text='abbrechen']");
     public static By todoNr(int todoNr) { return By.xpath("//*[@resource-id='todoText "+todoNr+"']");}
     public static By deleteButtonNr(int todoNr) { return By.xpath("//*[@resource-id='deleteButton "+todoNr+"']");}
+    private final By ClearButton = By.xpath("//*[@resource-id='clearButton']");
 
     public TodoScreenAndroid(AndroidDriver driver) {
         super(driver);
+    }
+
+    public void clearField() {
+        click(ClearButton);
     }
 
     public void addTodo(String todo, int index) {
@@ -39,12 +44,14 @@ public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
 
     public void changeTodoAndSave(String text, int index) {
         click(todoNr(index));
+        click(ClearButton);
         sendKeys(InputTodoChangeField, text);
         click(SaveTodoChangeButton);
     }
 
     public void changeTodoAndCancel(String text, int index) {
         click(todoNr(index));
+        click(ClearButton);
         sendKeys(InputTodoChangeField, text);
         click(CancelTodoChangeButton);
     }
