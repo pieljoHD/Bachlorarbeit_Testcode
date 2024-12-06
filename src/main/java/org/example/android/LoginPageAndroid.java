@@ -34,6 +34,7 @@ public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
     }
 
     public void checkNotOnLoginPage() {
+        waitElementToBeClickable(InputTodoField);
         Assert.assertTrue(isElementDisplayed(InputTodoField));
     }
 

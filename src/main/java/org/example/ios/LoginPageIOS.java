@@ -34,6 +34,7 @@ public class LoginPageIOS extends BasePageIOS<LoginPageIOS>{
     }
 
     public void checkNotOnLoginPage() throws InterruptedException {
+        waitElementToBeClickable(InputTodoField);
         Assert.assertTrue(isElementDisplayed(InputTodoField));
     }
 
