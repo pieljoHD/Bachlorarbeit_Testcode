@@ -27,7 +27,6 @@ public class ExecutionTimeListener implements ITestListener {
     @Override
     public void onStart(ITestContext context) {
         startTime = System.currentTimeMillis();
-        System.out.println("Starting test class: " + context.getName());
     }
 
     @Override

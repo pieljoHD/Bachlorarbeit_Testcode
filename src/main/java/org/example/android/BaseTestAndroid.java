@@ -3,7 +3,9 @@ package org.example.android;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.example.utils.AppiumDriverBuilder;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
 
@@ -13,14 +15,12 @@ public class BaseTestAndroid {
     public static Boolean localhostServerExecution = false;
 
     public BaseTestAndroid() {
-        System.out.println("super BaseTestAndroid called");
         localhostServerExecution = true;
     }
 
     @BeforeMethod
     public void openApp() throws IOException{
         appiumDriverBuilder = new AppiumDriverBuilder();
-        System.setProperty("test.type", "android");
         driver = appiumDriverBuilder.installAndroidAppAndGetDriver();
     }
 

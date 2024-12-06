@@ -10,7 +10,8 @@ public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
     private final By ErrorText = By.xpath("//*[@resource-id='ErrorText']");
     private final By LoginButton = By.xpath("//*[@resource-id='LoginButton']");
     private final By InputTodoField = By.xpath("//*[@resource-id='todoInput']");
-    private final By ClearButton = By.xpath("//*[@resource-id='clearButton']");
+    private final By ClearButtonUserName = By.xpath("//*[@resource-id='clearButtonUserName']");
+    private final By ClearButtonPassword = By.xpath("//*[@resource-id='clearButtonPassword']");
 
     public LoginPageAndroid(AndroidDriver driver) {
         super(driver);
@@ -23,8 +24,12 @@ public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
         Assert.assertTrue(isElementDisplayed(InputTodoField));
     }
 
-    public void clearField() {
-        click(ClearButton);
+    public void clearUserName() {
+        click(ClearButtonUserName);
+    }
+
+    public void clearPassword() {
+        click(ClearButtonPassword);
     }
 
     public void loginWithCredentials(String username, String password) {

@@ -6,10 +6,10 @@
     </listeners>
     <test name="IOS Tests">
         <classes>
-            <class name="ios.Login"/>
             <class name="ios.AddManyTodos"/>
             <class name="ios.AddAndDeleteTodos"/>
             <class name="ios.AddAndChangeTodos"/>
+            <class name="ios.LoginTest"/>
         </classes>
     </test>
 </suite>

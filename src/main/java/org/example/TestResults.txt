@@ -1,53 +1,21 @@
 
-Finished test class:IOS Tests,Duration:179915ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:177777ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:176737ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:64827ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:65571ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:65477ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
 
+Finished test class:Android Tests,Duration:67809ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:178472ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
 ---------------------------------END OF ALL TESTS---------------------------------
-Durchschnnittliche IOS Testzeit: 178143.0 ms
-Durchschnnittliche Android Testzeit 65291.668 ms
+Durchschnnittliche IOS Testzeit: 178472.0 ms
+Durchschnnittliche Android Testzeit: 67809.0 ms
