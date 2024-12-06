@@ -1,6 +1,5 @@
 
-
-Finished test class:Android Tests,Duration:67809ms
+Finished test class:Android Tests,Duration:67402ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -8,7 +7,311 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:178472ms
+Finished test class:Android Tests,Duration:68525ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:67175ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:67430ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:66086ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:67355ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:66770ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:66431ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:67674ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:66260ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:66727ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:65783ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:66585ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:64975ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:65994ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:65965ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:65009ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:65569ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:66179ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:65145ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:179446ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:178019ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:178277ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:180289ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:179145ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:177547ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:177005ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:178522ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:177168ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:179558ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:179967ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:178121ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:179550ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:180192ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:179239ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:179063ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:179158ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:180727ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:180126ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:179639ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -17,5 +320,5 @@ Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
 ---------------------------------END OF ALL TESTS---------------------------------
-Durchschnnittliche IOS Testzeit: 178472.0 ms
-Durchschnnittliche Android Testzeit: 67809.0 ms
+Durchschnnittliche IOS Testzeit: 179010.95 ms
+Durchschnnittliche Android Testzeit: 66516.57 ms
