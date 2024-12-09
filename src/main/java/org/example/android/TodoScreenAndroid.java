@@ -1,18 +1,19 @@
 package org.example.android;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
-    private final By AddTodoButton = By.id("addButton");
-    private final By InputTodoField = By.id("todoInput");
-    private final By InputTodoChangeField = By.id("changeTodoInput");
-    private final By SaveTodoChangeButton = By.id("speichern");
-    private final By CancelTodoChangeButton = By.id("abbrechen");
-    public static By todoNr(int todoNr) { return By.id("todoText "+todoNr);}
-    public static By deleteButtonNr(int todoNr) { return By.id("deleteButton "+todoNr);}
-    private final By ClearButton = By.id("clearButton");
+    private final By AddTodoButton = AppiumBy.id("addButton");
+    private final By InputTodoField = AppiumBy.id("todoInput");
+    private final By InputTodoChangeField = AppiumBy.id("changeTodoInput");
+    private final By SaveTodoChangeButton = AppiumBy.id("speichern");
+    private final By CancelTodoChangeButton = AppiumBy.id("abbrechen");
+    public static By todoNr(int todoNr) { return AppiumBy.id("todoText "+todoNr);}
+    public static By deleteButtonNr(int todoNr) { return AppiumBy.id("deleteButton "+todoNr);}
+    private final By ClearButton = AppiumBy.id("clearButton");
 
     public TodoScreenAndroid(AndroidDriver driver) {
         super(driver);

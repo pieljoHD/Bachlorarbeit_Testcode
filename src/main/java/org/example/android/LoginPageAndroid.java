@@ -1,17 +1,18 @@
 package org.example.android;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
-    private final By UserNameInput = By.id("UserNameInput");
-    private final By PasswortInput = By.id("PasswortInput");
-    private final By ErrorText = By.id("ErrorText");
-    private final By LoginButton = By.id("LoginButton");
-    private final By InputTodoField = By.id("todoInput");
-    private final By ClearButtonUserName = By.id("clearButtonUserName");
-    private final By ClearButtonPassword = By.id("clearButtonPassword");
+    private final By UserNameInput = AppiumBy.id("UserNameInput");
+    private final By PasswortInput = AppiumBy.id("PasswortInput");
+    private final By ErrorText = AppiumBy.id("ErrorText");
+    private final By LoginButton = AppiumBy.id("LoginButton");
+    private final By InputTodoField = AppiumBy.id("todoInput");
+    private final By ClearButtonUserName = AppiumBy.id("clearButtonUserName");
+    private final By ClearButtonPassword = AppiumBy.id("clearButtonPassword");
 
     public LoginPageAndroid(AndroidDriver driver) {
         super(driver);
