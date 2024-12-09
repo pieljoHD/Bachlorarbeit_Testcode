@@ -42,17 +42,15 @@ public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
         Assert.assertNotEquals(getElement(todoNr(index)).getAttribute("label"), text);
     }
 
-    public void changeTodoAndSave(String text, int index) throws InterruptedException {
+    public void changeTodoAndSave(String text, int index)  {
         click(todoNr(index));
-        wait.wait(200);
         click(ClearButton);
         sendKeys(InputTodoChangeField, text);
         click(SaveTodoChangeButton);
     }
 
-    public void changeTodoAndCancel(String text, int index) throws InterruptedException {
+    public void changeTodoAndCancel(String text, int index)  {
         click(todoNr(index));
-        wait.wait(200);
         click(ClearButton);
         sendKeys(InputTodoChangeField, text);
         click(CancelTodoChangeButton);
