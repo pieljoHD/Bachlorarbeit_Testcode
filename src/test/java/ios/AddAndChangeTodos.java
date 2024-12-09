@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class AddAndChangeTodos extends BaseTestIOS {
 
     @Test
-    public void addAndChangeTodos() {
+    public void addAndChangeTodos() throws InterruptedException {
         IOSDriver driver = getDriver();
 
         LoginPageIOS loginPage = new LoginPageIOS(driver);

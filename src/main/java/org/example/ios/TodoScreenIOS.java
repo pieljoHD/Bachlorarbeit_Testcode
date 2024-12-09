@@ -5,14 +5,14 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
-    private final By AddTodoButton = By.xpath("//*[@name='AddButton']");
-    private final By InputTodoField = By.xpath("//*[@name='TodoInput']");
-    private final By InputTodoChangeField = By.xpath("//*[@name='changeTodoInput']");
-    private final By SaveTodoChangeButton = By.xpath("//*[@name='speichern']");
-    private final By CancelTodoChangeButton = By.xpath("//*[@name='abbrechen']");
-    public static By todoNr(int todoNr) { return By.xpath("//*[@name='todoText "+todoNr+"']");}
-    public static By deleteButtonNr(int todoNr) { return By.xpath("//*[@name='deleteButton "+todoNr+"']");}
-    private final By ClearButton = By.xpath("//*[@name='clearButton']");
+    private final By AddTodoButton = By.id("AddButton");
+    private final By InputTodoField = By.id("TodoInput");
+    private final By InputTodoChangeField = By.id("changeTodoInput");
+    private final By SaveTodoChangeButton = By.id("speichern");
+    private final By CancelTodoChangeButton = By.id("abbrechen");
+    public static By todoNr(int todoNr) { return By.id("todoText "+todoNr);}
+    public static By deleteButtonNr(int todoNr) { return By.id("deleteButton "+todoNr);}
+    private final By ClearButton = By.id("clearButton");
 
     public TodoScreenIOS(IOSDriver driver) {
         super(driver);
@@ -42,15 +42,17 @@ public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
         Assert.assertNotEquals(getElement(todoNr(index)).getAttribute("label"), text);
     }
 
-    public void changeTodoAndSave(String text, int index) {
+    public void changeTodoAndSave(String text, int index) throws InterruptedException {
         click(todoNr(index));
+        wait.wait(200);
         click(ClearButton);
         sendKeys(InputTodoChangeField, text);
         click(SaveTodoChangeButton);
     }
 
-    public void changeTodoAndCancel(String text, int index) {
+    public void changeTodoAndCancel(String text, int index) throws InterruptedException {
         click(todoNr(index));
+        wait.wait(200);
         click(ClearButton);
         sendKeys(InputTodoChangeField, text);
         click(CancelTodoChangeButton);

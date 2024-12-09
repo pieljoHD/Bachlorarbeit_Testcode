@@ -5,13 +5,13 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
-    private final By UserNameInput = By.xpath("//*[@resource-id='UserNameInput']");
-    private final By PasswortInput = By.xpath("//*[@resource-id='PasswortInput']");
-    private final By ErrorText = By.xpath("//*[@resource-id='ErrorText']");
-    private final By LoginButton = By.xpath("//*[@resource-id='LoginButton']");
-    private final By InputTodoField = By.xpath("//*[@resource-id='todoInput']");
-    private final By ClearButtonUserName = By.xpath("//*[@resource-id='clearButtonUserName']");
-    private final By ClearButtonPassword = By.xpath("//*[@resource-id='clearButtonPassword']");
+    private final By UserNameInput = By.id("UserNameInput");
+    private final By PasswortInput = By.id("PasswortInput");
+    private final By ErrorText = By.id("ErrorText");
+    private final By LoginButton = By.id("LoginButton");
+    private final By InputTodoField = By.id("todoInput");
+    private final By ClearButtonUserName = By.id("clearButtonUserName");
+    private final By ClearButtonPassword = By.id("clearButtonPassword");
 
     public LoginPageAndroid(AndroidDriver driver) {
         super(driver);
