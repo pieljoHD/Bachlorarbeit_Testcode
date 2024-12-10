@@ -1,18 +1,19 @@
 package org.example.android;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
-    private final By AddTodoButton = By.id("addButton");
-    private final By InputTodoField = By.id("todoInput");
-    private final By InputTodoChangeField = By.id("changeTodoInput");
-    private final By SaveTodoChangeButton = By.id("speichern");
-    private final By CancelTodoChangeButton = By.id("abbrechen");
-    public static By todoNr(int todoNr) { return By.id("todoText "+todoNr);}
-    public static By deleteButtonNr(int todoNr) { return By.id("deleteButton "+todoNr);}
-    private final By ClearButton = By.id("clearButton");
+    private final By AddTodoButton = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"addButton\")");
+    private final By InputTodoField = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"todoInput\")");
+    private final By InputTodoChangeField = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"changeTodoInput\")");
+    private final By SaveTodoChangeButton = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"speichern\")");
+    private final By CancelTodoChangeButton = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"abbrechen\")");
+    public static By todoNr(int todoNr) { return AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"todoText "+todoNr+"\")");}
+    public static By deleteButtonNr(int todoNr) { return AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"deleteButton "+todoNr+"\")");}
+    private final By ClearButton = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"clearButton\")");
 
     public TodoScreenAndroid(AndroidDriver driver) {
         super(driver);

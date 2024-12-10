@@ -1,18 +1,19 @@
 package org.example.ios;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
-    private final By AddTodoButton = By.id("AddButton");
-    private final By InputTodoField = By.id("TodoInput");
-    private final By InputTodoChangeField = By.id("changeTodoInput");
-    private final By SaveTodoChangeButton = By.id("speichern");
-    private final By CancelTodoChangeButton = By.id("abbrechen");
-    public static By todoNr(int todoNr) { return By.id("todoText "+todoNr);}
-    public static By deleteButtonNr(int todoNr) { return By.id("deleteButton "+todoNr);}
-    private final By ClearButton = By.id("clearButton");
+    private final By AddTodoButton = AppiumBy.iOSNsPredicateString("name == 'AddButton'");
+    private final By InputTodoField = AppiumBy.iOSNsPredicateString("name == 'TodoInput'");
+    private final By InputTodoChangeField = AppiumBy.iOSNsPredicateString("name == 'changeTodoInput'");
+    private final By SaveTodoChangeButton = AppiumBy.iOSNsPredicateString("name == 'speichern'");
+    private final By CancelTodoChangeButton = AppiumBy.iOSNsPredicateString("name == 'abbrechen'");
+    public static By todoNr(int todoNr) { return AppiumBy.iOSNsPredicateString("name == 'todoText "+todoNr+"'");}
+    public static By deleteButtonNr(int todoNr) { return AppiumBy.iOSNsPredicateString("name == 'deleteButton "+todoNr+"'");}
+    private final By ClearButton = AppiumBy.iOSNsPredicateString("name == 'clearButton'");
 
     public TodoScreenIOS(IOSDriver driver) {
         super(driver);

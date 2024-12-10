@@ -4,22 +4,18 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import org.example.BasePage;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import java.time.Duration;
 
 public class BasePageAndroid <T extends BasePageAndroid<T>> extends BasePage<T> {
 
     protected static AndroidDriver driver;
-    public final By androidViewViewXPath = By.xpath("//*[@class='android.view.View']");
 
     public BasePageAndroid(AndroidDriver driver) {
         super(driver);
         this.driver = driver;
-    }
-
-
-    public void clickByViewView(By id, int number) {
-        getElement(id).findElements(androidViewViewXPath).get(number).click();
     }
 
     public BasePage hideKeyboard() {

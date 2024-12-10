@@ -13,15 +13,6 @@ public class TestNGRunner {
     public void runAllTests() {
         int numberOfExecutions = 20;
 
-        String suiteFileIOS = "/Users/johannespielmeier/Bachlorarbeit/Test_code/TestCodeBachlorarbeit/src/test/resources/ios/allIOSTests.xml";
-
-        TestNG testngIOS = new TestNG();
-
-        for (int i = 0; i < numberOfExecutions; i++) {
-            testngIOS.setTestSuites(Collections.singletonList(suiteFileIOS));
-            testngIOS.run();
-        }
-
         String suiteFileAndroid = "/Users/johannespielmeier/Bachlorarbeit/Test_code/TestCodeBachlorarbeit/src/test/resources/android/allAndroidTests.xml";
 
         TestNG testngAndroid = new TestNG();
@@ -29,6 +20,15 @@ public class TestNGRunner {
         for (int i = 0; i < numberOfExecutions; i++) {
             testngAndroid.setTestSuites(Collections.singletonList(suiteFileAndroid));
             testngAndroid.run();
+        }
+
+        String suiteFileIOS = "/Users/johannespielmeier/Bachlorarbeit/Test_code/TestCodeBachlorarbeit/src/test/resources/ios/allIOSTests.xml";
+
+        TestNG testngIOS = new TestNG();
+
+        for (int i = 0; i < numberOfExecutions; i++) {
+            testngIOS.setTestSuites(Collections.singletonList(suiteFileIOS));
+            testngIOS.run();
         }
     }
 

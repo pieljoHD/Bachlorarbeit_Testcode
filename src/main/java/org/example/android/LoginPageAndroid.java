@@ -1,17 +1,18 @@
 package org.example.android;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
-    private final By UserNameInput = By.id("UserNameInput");
-    private final By PasswortInput = By.id("PasswortInput");
-    private final By ErrorText = By.id("ErrorText");
-    private final By LoginButton = By.id("LoginButton");
-    private final By InputTodoField = By.id("todoInput");
-    private final By ClearButtonUserName = By.id("clearButtonUserName");
-    private final By ClearButtonPassword = By.id("clearButtonPassword");
+    private final By UserNameInput = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"UserNameInput\")");
+    private final By PasswortInput = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"PasswortInput\")");
+    private final By ErrorText =AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ErrorText\")");
+    private final By LoginButton = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"LoginButton\")");
+    private final By InputTodoField = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"todoInput\")");
+    private final By ClearButtonUserName = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"clearButtonUserName\")");
+    private final By ClearButtonPassword = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"clearButtonPassword\")");
 
     public LoginPageAndroid(AndroidDriver driver) {
         super(driver);
