@@ -14,14 +14,14 @@ public class LoginTest extends BaseTestAndroid {
         loginPage.loginWithCredentials("test123","falsch");
         loginPage.checkErrorTextVisible();
 
-        loginPage.clearUserName();
-        loginPage.clearPassword();
+        loginPage.clearFieldUsername();
+        loginPage.clearFieldPassword();
 
         loginPage.loginWithCredentials("falsch","1234");
         loginPage.checkErrorTextVisible();
 
-        loginPage.clearUserName();
-        loginPage.clearPassword();
+        loginPage.clearFieldUsername();
+        loginPage.clearFieldPassword();
 
         loginPage.loginWithCredentials("test123","1234");
         loginPage.checkNotOnLoginPage();

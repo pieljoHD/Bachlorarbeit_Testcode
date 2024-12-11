@@ -1,30 +1,47 @@
 package org.example.android;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
-    private final By AddTodoButton = By.xpath("//*[@resource-id='addButton']");
-    private final By InputTodoField = By.xpath("//*[@resource-id='todoInput']");
-    private final By InputTodoChangeField = By.xpath("//*[@resource-id='changeTodoInput']");
-    private final By SaveTodoChangeButton = By.xpath("//*[@text='speichern']");
-    private final By CancelTodoChangeButton = By.xpath("//*[@text='abbrechen']");
-    public static By todoNr(int todoNr) { return By.xpath("//*[@resource-id='todoText "+todoNr+"']");}
-    public static By deleteButtonNr(int todoNr) { return By.xpath("//*[@resource-id='deleteButton "+todoNr+"']");}
-    private final By ClearButton = By.xpath("//*[@resource-id='clearButton']");
+public class TodoScreenAndroid extends BasePageAndroid<TodoScreenAndroid>{
+    @CacheLookup
+    @AndroidFindBy(id = "addButton")
+    private WebElement addButton;
+
+    @CacheLookup
+    @AndroidFindBy(id = "todoInput")
+    private WebElement todoInput;
+
+    @AndroidFindBy(id = "changeTodoInput")
+    private WebElement changeTodoInput;
+
+    @AndroidFindBy(id = "speichern")
+    private WebElement speichern;
+
+    @AndroidFindBy(id = "abbrechen")
+    private WebElement abbrechen;
+
+    public static By todoNr(int todoNr) { return new By.ById("todoText " + todoNr); }
+
+    public static By deleteButtonNr(int todoNr) { return new By.ById("deleteButton " + todoNr);}
+
+    @AndroidFindBy(id = "clearButton")
+    private WebElement clearButton;
 
     public TodoScreenAndroid(AndroidDriver driver) {
         super(driver);
-    }
-
-    public void clearField() {
-        click(ClearButton);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
     public void addTodo(String todo, int index) {
-        sendKeys(InputTodoField, todo);
-        click(AddTodoButton);
+        todoInput.sendKeys(todo);
+        addButton.click();
         swipeDown();
 
         Assert.assertTrue(isElementDisplayed(todoNr(index)));
@@ -38,21 +55,17 @@ public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
         Assert.assertEquals(getElement(todoNr(index)).getAttribute("text"), text);
     }
 
-    public void todoHasNotTodo(String text, int index) {
-        Assert.assertNotEquals(getElement(todoNr(index)).getAttribute("text"), text);
-    }
-
     public void changeTodoAndSave(String text, int index) {
         click(todoNr(index));
-        click(ClearButton);
-        sendKeys(InputTodoChangeField, text);
-        click(SaveTodoChangeButton);
+        clearButton.click();
+        changeTodoInput.sendKeys(text);
+        speichern.click();
     }
 
     public void changeTodoAndCancel(String text, int index) {
         click(todoNr(index));
-        click(ClearButton);
-        sendKeys(InputTodoChangeField, text);
-        click(CancelTodoChangeButton);
+        clearButton.click();
+        changeTodoInput.sendKeys(text);
+        abbrechen.click();
     }
 }

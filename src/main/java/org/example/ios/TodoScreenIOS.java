@@ -1,30 +1,46 @@
 package org.example.ios;
 
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
-    private final By AddTodoButton = By.xpath("//*[@name='AddButton']");
-    private final By InputTodoField = By.xpath("//*[@name='TodoInput']");
-    private final By InputTodoChangeField = By.xpath("//*[@name='changeTodoInput']");
-    private final By SaveTodoChangeButton = By.xpath("//*[@name='speichern']");
-    private final By CancelTodoChangeButton = By.xpath("//*[@name='abbrechen']");
-    public static By todoNr(int todoNr) { return By.xpath("//*[@name='todoText "+todoNr+"']");}
-    public static By deleteButtonNr(int todoNr) { return By.xpath("//*[@name='deleteButton "+todoNr+"']");}
-    private final By ClearButton = By.xpath("//*[@name='clearButton']");
+    @CacheLookup
+    @FindBy(id = "AddButton")
+    private WebElement addButton;
 
+    @CacheLookup
+    @FindBy(id = "TodoInput")
+    private WebElement todoInput;
+
+    @FindBy(id = "changeTodoInput")
+    private WebElement changeTodoInput;
+
+    @FindBy(id = "speichern")
+    private WebElement speichern;
+
+    @FindBy(id = "abbrechen")
+    private WebElement abbrechen;
+
+    public static By todoNr(int todoNr) { return new By.ById("todoText " + todoNr); }
+
+    public static By deleteButtonNr(int todoNr) { return new By.ById("deleteButton " + todoNr);}
+
+    @FindBy(id = "clearButton")
+    private WebElement clearButton;
     public TodoScreenIOS(IOSDriver driver) {
         super(driver);
-    }
-
-    public void clearField() {
-        click(ClearButton);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
     public void addTodo(String todo, int index) {
-        sendKeys(InputTodoField, todo);
-        click(AddTodoButton);
+        todoInput.sendKeys(todo);
+        addButton.click();
         swipeDown();
 
         Assert.assertTrue(isElementDisplayed(todoNr(index)));
@@ -38,22 +54,18 @@ public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
         Assert.assertEquals(getElement(todoNr(index)).getAttribute("label"), text);
     }
 
-    public void todoHasNotTodo(String text, int index) {
-        Assert.assertNotEquals(getElement(todoNr(index)).getAttribute("label"), text);
-    }
-
     public void changeTodoAndSave(String text, int index) {
         click(todoNr(index));
-        click(ClearButton);
-        sendKeys(InputTodoChangeField, text);
-        click(SaveTodoChangeButton);
+        clearButton.click();
+        changeTodoInput.sendKeys(text);
+        speichern.click();
     }
 
     public void changeTodoAndCancel(String text, int index) {
         click(todoNr(index));
-        click(ClearButton);
-        sendKeys(InputTodoChangeField, text);
-        click(CancelTodoChangeButton);
+        clearButton.click();
+        changeTodoInput.sendKeys(text);
+        abbrechen.click();
     }
 }
 

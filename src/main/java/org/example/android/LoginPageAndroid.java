@@ -1,49 +1,74 @@
 package org.example.android;
 
 import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.By;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
-    private final By UserNameInput = By.xpath("//*[@resource-id='UserNameInput']");
-    private final By PasswortInput = By.xpath("//*[@resource-id='PasswortInput']");
-    private final By ErrorText = By.xpath("//*[@resource-id='ErrorText']");
-    private final By LoginButton = By.xpath("//*[@resource-id='LoginButton']");
-    private final By InputTodoField = By.xpath("//*[@resource-id='todoInput']");
-    private final By ClearButtonUserName = By.xpath("//*[@resource-id='clearButtonUserName']");
-    private final By ClearButtonPassword = By.xpath("//*[@resource-id='clearButtonPassword']");
+    @CacheLookup
+    @AndroidFindBy(id = "UserNameInput")
+    private WebElement UserNameInput;
+
+    @CacheLookup
+    @AndroidFindBy(id = "PasswortInput")
+    private WebElement PasswortInput;
+
+    @AndroidFindBy(id = "ErrorText")
+    private WebElement ErrorText;
+
+    @CacheLookup
+    @AndroidFindBy(id = "LoginButton")
+    private WebElement LoginButton;
+
+    @CacheLookup
+    @AndroidFindBy(id = "todoInput")
+    private WebElement InputTodoField;
+
+
+    @AndroidFindBy(id = "clearButtonUserName")
+    private WebElement ClearButtonUsername;
+
+
+    @AndroidFindBy(id = "clearButtonPassword")
+    private WebElement ClearButtonPassword;
+
 
     public LoginPageAndroid(AndroidDriver driver) {
         super(driver);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    public void loginWithRightCredentials() {
-        sendKeys(UserNameInput, "test123");
-        sendKeys(PasswortInput, "1234");
-        click(LoginButton);
-        Assert.assertTrue(isElementDisplayed(InputTodoField));
+    public void clearFieldUsername() {
+        click(ClearButtonUsername);
     }
 
-    public void clearUserName() {
-        click(ClearButtonUserName);
-    }
-
-    public void clearPassword() {
+    public void clearFieldPassword() {
         click(ClearButtonPassword);
     }
 
+    public void loginWithRightCredentials() {
+        UserNameInput.sendKeys("test123");
+        PasswortInput.sendKeys("1234");
+        click(LoginButton);
+        Assert.assertTrue(InputTodoField.isDisplayed());
+    }
+
     public void loginWithCredentials(String username, String password) {
-        sendKeys(UserNameInput, username);
-        sendKeys(PasswortInput, password);
+        UserNameInput.sendKeys(username);
+        PasswortInput.sendKeys(password);
         click(LoginButton);
     }
 
     public void checkNotOnLoginPage() {
         waitElementToBeClickable(InputTodoField);
-        Assert.assertTrue(isElementDisplayed(InputTodoField));
+        Assert.assertTrue(InputTodoField.isDisplayed());
     }
 
     public void checkErrorTextVisible() {
-        Assert.assertTrue(isElementDisplayed(ErrorText));
+        Assert.assertTrue(ErrorText.isDisplayed());
     }
 }
