@@ -1,21 +1,26 @@
 package android;
 
 import io.appium.java_client.android.AndroidDriver;
-import org.example.android.BaseTestAndroid;
-import org.example.android.LoginPageAndroid;
-import org.example.android.TodoScreenAndroid;
+import org.example.pages.LoginPage;
+import org.example.pages.TodoPage;
+import org.example.utils.BaseTest;
+import org.example.utils.PLATFORM;
 import org.testng.annotations.Test;
 
-public class AddAndChangeTodos extends BaseTestAndroid {
+public class AddAndChangeTodos extends BaseTest {
+
+    public AddAndChangeTodos(PLATFORM platform) {
+        super(platform);
+    }
 
     @Test
     public void addAndChangeTodos() {
-        AndroidDriver driver = getDriver();
+        AndroidDriver driver = (AndroidDriver) getDriver();
 
-        LoginPageAndroid loginPage = new LoginPageAndroid(driver);
+        LoginPage loginPage = new LoginPage(driver);
         loginPage.loginWithRightCredentials();
 
-        TodoScreenAndroid todoScreen = new TodoScreenAndroid(driver);
+        TodoPage todoScreen = new TodoPage(driver);
         for(int i = 0; i<3; i++) {
             int x = i+1;
             todoScreen.addTodo("TODO" + x,i);

@@ -2,7 +2,7 @@ package android;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.example.android.BaseTestAndroid;
-import org.example.android.LoginPageAndroid;
+import org.example.pages.LoginPage;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTestAndroid {
@@ -10,7 +10,7 @@ public class LoginTest extends BaseTestAndroid {
     @Test
     public void addAndDeleteTodos() {
         AndroidDriver driver = getDriver();
-        LoginPageAndroid loginPage = new LoginPageAndroid(driver);
+        LoginPage loginPage = new LoginPage(driver);
         loginPage.loginWithCredentials("test123","falsch");
         loginPage.checkErrorTextVisible();
 

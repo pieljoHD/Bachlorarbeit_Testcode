@@ -2,7 +2,7 @@ package ios;
 
 import io.appium.java_client.ios.IOSDriver;
 import org.example.ios.BaseTestIOS;
-import org.example.ios.LoginPageIOS;
+import org.example.pages.LoginPage;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTestIOS {
@@ -11,7 +11,7 @@ public class LoginTest extends BaseTestIOS {
     @Test
     public void testIDLogin() throws InterruptedException {
         driver = getDriver();
-        LoginPageIOS loginPageIOS = new LoginPageIOS(driver);
+        LoginPage loginPageIOS = new LoginPage(driver);
         loginPageIOS.loginWithCredentials("test123","falsch");
         loginPageIOS.checkErrorTextVisible();
 

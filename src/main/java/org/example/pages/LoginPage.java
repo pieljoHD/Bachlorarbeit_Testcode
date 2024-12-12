@@ -1,43 +1,49 @@
-package org.example.android;
+package org.example.pages;
 
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.example.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
+public class LoginPage extends BasePage<LoginPage> {
+
     @CacheLookup
-    @AndroidFindBy(id = "UserNameInput")
+    @FindBy(id = "UserNameInput")
     private WebElement UserNameInput;
 
     @CacheLookup
-    @AndroidFindBy(id = "PasswortInput")
+    @FindBy(id = "PasswortInput")
     private WebElement PasswortInput;
 
-    @AndroidFindBy(id = "ErrorText")
+    @FindBy(id = "ErrorText")
     private WebElement ErrorText;
 
     @CacheLookup
-    @AndroidFindBy(id = "LoginButton")
+    @FindBy(id = "LoginButton")
     private WebElement LoginButton;
 
     @CacheLookup
-    @AndroidFindBy(id = "todoInput")
+    @FindBy(id = "TodoInput")
     private WebElement InputTodoField;
 
-
-    @AndroidFindBy(id = "clearButtonUserName")
+    @FindBy(id = "clearButtonUserName")
     private WebElement ClearButtonUsername;
 
-
-    @AndroidFindBy(id = "clearButtonPassword")
+    @FindBy(id = "clearButtonPassword")
     private WebElement ClearButtonPassword;
 
 
-    public LoginPageAndroid(AndroidDriver driver) {
+    public LoginPage(IOSDriver driver) {
+        super(driver);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+    }
+
+    public LoginPage(AndroidDriver driver) {
         super(driver);
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }

@@ -1,7 +1,9 @@
-package org.example.ios;
+package org.example.pages;
 
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.example.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -9,7 +11,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
+public class TodoPage extends BasePage<TodoPage> {
+
     @CacheLookup
     @FindBy(id = "AddButton")
     private WebElement addButton;
@@ -33,7 +36,13 @@ public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
 
     @FindBy(id = "clearButton")
     private WebElement clearButton;
-    public TodoScreenIOS(IOSDriver driver) {
+
+    public TodoPage(IOSDriver driver) {
+        super(driver);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+    }
+
+    public TodoPage(AndroidDriver driver) {
         super(driver);
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
@@ -51,7 +60,11 @@ public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
     }
 
     public void todoHasTodo(String text, int index) {
-        Assert.assertEquals(getElement(todoNr(index)).getAttribute("label"), text);
+        if(driver instanceof AndroidDriver) {
+            Assert.assertEquals(getElement(todoNr(index)).getAttribute("text"), text);
+        } else if(driver instanceof IOSDriver) {
+            Assert.assertEquals(getElement(todoNr(index)).getAttribute("label"), text);
+        }
     }
 
     public void changeTodoAndSave(String text, int index) {
@@ -68,4 +81,3 @@ public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
         abbrechen.click();
     }
 }
-
