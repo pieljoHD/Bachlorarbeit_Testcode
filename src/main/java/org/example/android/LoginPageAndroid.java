@@ -4,34 +4,27 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
-    @CacheLookup
     @AndroidFindBy(id = "UserNameInput")
     private WebElement UserNameInput;
 
-    @CacheLookup
     @AndroidFindBy(id = "PasswortInput")
     private WebElement PasswortInput;
 
     @AndroidFindBy(id = "ErrorText")
     private WebElement ErrorText;
 
-    @CacheLookup
     @AndroidFindBy(id = "LoginButton")
     private WebElement LoginButton;
 
-    @CacheLookup
     @AndroidFindBy(id = "todoInput")
     private WebElement InputTodoField;
 
-
     @AndroidFindBy(id = "clearButtonUserName")
     private WebElement ClearButtonUsername;
-
 
     @AndroidFindBy(id = "clearButtonPassword")
     private WebElement ClearButtonPassword;

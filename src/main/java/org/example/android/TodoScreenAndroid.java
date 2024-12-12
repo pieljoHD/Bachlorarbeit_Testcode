@@ -5,16 +5,13 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class TodoScreenAndroid extends BasePageAndroid<TodoScreenAndroid>{
-    @CacheLookup
     @AndroidFindBy(id = "addButton")
     private WebElement addButton;
 
-    @CacheLookup
     @AndroidFindBy(id = "todoInput")
     private WebElement todoInput;
 

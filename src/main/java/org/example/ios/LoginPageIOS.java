@@ -3,35 +3,28 @@ package org.example.ios;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class LoginPageIOS extends BasePageIOS<LoginPageIOS>{
-    @CacheLookup
     @FindBy(id = "UserNameInput")
     private WebElement UserNameInput;
 
-    @CacheLookup
     @FindBy(id = "PasswortInput")
     private WebElement PasswortInput;
 
     @FindBy(id = "ErrorText")
     private WebElement ErrorText;
 
-    @CacheLookup
     @FindBy(id = "LoginButton")
     private WebElement LoginButton;
 
-    @CacheLookup
     @FindBy(id = "TodoInput")
     private WebElement InputTodoField;
 
-
     @FindBy(id = "clearButtonUserName")
     private WebElement ClearButtonUsername;
-
 
     @FindBy(id = "clearButtonPassword")
     private WebElement ClearButtonPassword;
