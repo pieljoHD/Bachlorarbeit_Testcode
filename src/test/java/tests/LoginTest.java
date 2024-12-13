@@ -7,10 +7,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
-    @Parameters("platform")
+
+    @Parameters({"platform","device4"})
     @BeforeMethod
-    public void setUpDriver(String platform) {
-        setUp(platform);
+    public void setUpDriver(String platform, String device) {
+        setUp(platform, device);
     }
 
     @Test

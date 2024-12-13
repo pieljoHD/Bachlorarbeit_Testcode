@@ -1,11 +1,15 @@
 <!DOCTYPE suite SYSTEM
         "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Smoke Tests Android" configfailurepolicy="continue" verbose="10">
+<suite name="Smoke Tests Android" configfailurepolicy="continue" verbose="10" parallel="classes" thread-count="4">
     <listeners>
         <listener class-name="utils.ExecutionTimeListener"/>
     </listeners>
     <parameter name="platform" value="Android"/>
+    <parameter name="device1" value="emulator-5554"/>
+    <parameter name="device2" value="emulator-5556"/>
+    <parameter name="device3" value="emulator-5558"/>
+    <parameter name="device4" value="emulator-5560"/>
     <test name="Android Tests">
         <classes>
             <class name="tests.AddManyTodos"/>

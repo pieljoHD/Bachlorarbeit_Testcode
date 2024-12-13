@@ -30,11 +30,12 @@ public class AppiumDriverBuilder {
         return caps;
     }
 
-    public AndroidDriver installAndroidAppAndGetDriver() {
+    public AndroidDriver  installAndroidAppAndGetDriver(String deviceId) {
         caps = setDefaultAndroidCapabilities(caps);
         caps.setCapability("appium:appPackage", "com.example.todolisttestapplication");
         caps.setCapability("appium:appActivity", "com.example.todolisttestapplication.MainActivity");
         caps.setCapability("appium:disableIdLocatorAutocompletion", true);
+        caps.setCapability("appium:udid", deviceId);
         driver = new AndroidDriver(getHubUrl(), caps);
 
         return driver;

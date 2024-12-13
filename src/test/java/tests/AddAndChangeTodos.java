@@ -9,10 +9,10 @@ import org.testng.annotations.Test;
 
 public class AddAndChangeTodos extends BaseTest {
 
-    @Parameters("platform")
+    @Parameters({"platform","device1"})
     @BeforeMethod
-    public void setUpDriver(String platform) {
-        setUp(platform);
+    public void setUpDriver(String platform, String device) {
+        setUp(platform, device);
     }
 
     @Test

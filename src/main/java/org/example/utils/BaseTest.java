@@ -6,10 +6,11 @@ import org.testng.annotations.AfterMethod;
 public class BaseTest {
     protected AppiumDriver driver;
 
-    public void setUp(String platform) {
+    public void setUp(String platform, String deviceId) {
         AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();;
         if ("Android".equalsIgnoreCase(platform)) {
-            driver = appiumDriverBuilder.installAndroidAppAndGetDriver();
+            System.out.println("Create new Driver");
+            driver = appiumDriverBuilder.installAndroidAppAndGetDriver(deviceId);
         } else if ("IOS".equalsIgnoreCase(platform)) {
             driver = appiumDriverBuilder.getDriverIOSSession();
         } else {
