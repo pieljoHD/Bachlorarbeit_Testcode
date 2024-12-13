@@ -2,10 +2,12 @@
         "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Smoke Tests Android" configfailurepolicy="continue" verbose="10">
+    <parameter name="platform" value="Android"/>
+
     <listeners>
         <listener class-name="utils.ExecutionTimeListener"/>
+        <listener class-name="utils.SessionListener"/>
     </listeners>
-    <parameter name="platform" value="Android"/>
     <test name="Android Tests">
         <classes>
             <class name="tests.AddManyTodos"/>

@@ -32,8 +32,6 @@ public class AppiumDriverBuilder {
 
     public AndroidDriver installAndroidAppAndGetDriver() {
         caps = setDefaultAndroidCapabilities(caps);
-        caps.setCapability("appium:appPackage", "com.example.todolisttestapplication");
-        caps.setCapability("appium:appActivity", "com.example.todolisttestapplication.MainActivity");
         caps.setCapability("appium:disableIdLocatorAutocompletion", true);
         driver = new AndroidDriver(getHubUrl(), caps);
 
@@ -49,7 +47,6 @@ public class AppiumDriverBuilder {
         capabilities.setCapability("platformName", "ios");
         capabilities.setCapability("appium:automationName", "xcuitest");
         capabilities.setCapability("appium:appPushTimeout", 120000);
-        capabilities.setCapability("appium:bundleId", "jockel.BachlorarbeitTestapp");
         capabilities.setCapability("appium:clearSystemFiles", true);
         capabilities.setCapability("appium:maxTypingFrequency", 30);
         //let appium choose device

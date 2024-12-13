@@ -3,15 +3,15 @@
 <suite name="Smoke Tests ios" configfailurepolicy="continue" verbose="10">
     <listeners>
         <listener class-name="utils.ExecutionTimeListener"/>
+        <listener class-name="utils.SessionListener"/>
     </listeners>
     <parameter name="platform" value="IOS"/>
     <test name="IOS Tests">
         <classes>
-            <class name="tests.LoginTest"/>
             <class name="tests.AddManyTodos"/>
             <class name="tests.AddAndDeleteTodos"/>
             <class name="tests.AddAndChangeTodos"/>
-
+            <class name="tests.LoginTest"/>
         </classes>
     </test>
 </suite>
