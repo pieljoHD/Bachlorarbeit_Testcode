@@ -4,12 +4,14 @@
     <listeners>
         <listener class-name="utils.ExecutionTimeListener"/>
     </listeners>
+    <parameter name="platform" value="IOS"/>
     <test name="IOS Tests">
         <classes>
-            <class name="ios.AddManyTodos"/>
-            <class name="ios.AddAndDeleteTodos"/>
-            <class name="ios.AddAndChangeTodos"/>
-            <class name="ios.LoginTest"/>
+            <class name="tests.LoginTest"/>
+            <class name="tests.AddManyTodos"/>
+            <class name="tests.AddAndDeleteTodos"/>
+            <class name="tests.AddAndChangeTodos"/>
+
         </classes>
     </test>
 </suite>

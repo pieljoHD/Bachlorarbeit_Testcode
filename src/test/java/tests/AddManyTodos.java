@@ -1,16 +1,22 @@
-package ios;
+package tests;
 
-import io.appium.java_client.ios.IOSDriver;
-import org.example.ios.BaseTestIOS;
 import org.example.pages.LoginPage;
 import org.example.pages.TodoPage;
+import org.example.utils.BaseTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class AddManyTodos extends BaseTestIOS {
+public class AddManyTodos extends BaseTest {
+
+    @Parameters("platform")
+    @BeforeMethod
+    public void setUpDriver(String platform) {
+        setUp(platform);
+    }
+
     @Test
     public void addManyTodos() {
-        IOSDriver driver = getDriver();
-
         LoginPage loginPage = new LoginPage(driver);
         loginPage.loginWithRightCredentials();
 
@@ -19,5 +25,7 @@ public class AddManyTodos extends BaseTestIOS {
             int x = i+1;
             todoScreen.addTodo("TODO" + x,i);
         }
+
+        driver.quit();
     }
 }

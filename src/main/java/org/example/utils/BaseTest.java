@@ -2,37 +2,26 @@ package org.example.utils;
 
 import io.appium.java_client.AppiumDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
-    private AppiumDriver driver = null;
-    public AppiumDriverBuilder appiumDriverBuilder;
+    protected AppiumDriver driver;
 
-    public BaseTest(PLATFORM platform) {
-        if (platform == PLATFORM.ANDROID) {
+    public void setUp(String platform) {
+        AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();;
+        if ("Android".equalsIgnoreCase(platform)) {
             driver = appiumDriverBuilder.installAndroidAppAndGetDriver();
-        } else if (platform == PLATFORM.IOS) {
+        } else if ("IOS".equalsIgnoreCase(platform)) {
             driver = appiumDriverBuilder.getDriverIOSSession();
+        } else {
+            throw new IllegalArgumentException("Invalid platform: " + platform);
         }
     }
 
-    @BeforeMethod
-    public void openApp(){
-        appiumDriverBuilder = new AppiumDriverBuilder();
-    }
-
-    @AfterMethod(alwaysRun = true)
-    public void closeApp() {
-        driver.quit();
-    }
-
-    @AfterSuite(alwaysRun = true)
-    public void quitDriverSession() {
-        driver.quit();
-    }
-
-    public synchronized Object getDriver() {
-        return driver;
+    @AfterMethod
+    public void tearDown() {
+        System.out.println("killed driver Session");
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }

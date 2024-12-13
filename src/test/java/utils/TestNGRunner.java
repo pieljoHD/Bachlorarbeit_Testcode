@@ -11,7 +11,7 @@ import java.util.Collections;
 public class TestNGRunner {
 
     public void runAllTests() {
-        int numberOfExecutions = 1;
+        int numberOfExecutions = 20;
 
         String suiteFileAndroid = "/Users/johannespielmeier/Bachlorarbeit/Test_code/TestCodeBachlorarbeit/src/test/resources/android/allAndroidTests.xml";
 

@@ -1,15 +1,20 @@
-package android;
+package tests;
 
-import io.appium.java_client.android.AndroidDriver;
-import org.example.android.BaseTestAndroid;
 import org.example.pages.LoginPage;
+import org.example.utils.BaseTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class LoginTest extends BaseTestAndroid {
+public class LoginTest extends BaseTest {
+    @Parameters("platform")
+    @BeforeMethod
+    public void setUpDriver(String platform) {
+        setUp(platform);
+    }
 
     @Test
-    public void addAndDeleteTodos() {
-        AndroidDriver driver = getDriver();
+    public void testIDLogin()  {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.loginWithCredentials("test123","falsch");
         loginPage.checkErrorTextVisible();
@@ -25,5 +30,7 @@ public class LoginTest extends BaseTestAndroid {
 
         loginPage.loginWithCredentials("test123","1234");
         loginPage.checkNotOnLoginPage();
+
+        driver.quit();
     }
 }

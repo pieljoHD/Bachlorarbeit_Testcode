@@ -5,12 +5,13 @@
     <listeners>
         <listener class-name="utils.ExecutionTimeListener"/>
     </listeners>
+    <parameter name="platform" value="Android"/>
     <test name="Android Tests">
         <classes>
-            <class name="android.AddManyTodos"/>
-            <class name="android.AddAndChangeTodos"/>
-            <class name="android.AddAndDeleteTodos"/>
-            <class name="android.LoginTest"/>
+            <class name="tests.AddManyTodos"/>
+            <class name="tests.AddAndChangeTodos"/>
+            <class name="tests.AddAndDeleteTodos"/>
+            <class name="tests.LoginTest"/>
         </classes>
     </test>
 </suite>

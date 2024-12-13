@@ -1,16 +1,15 @@
 package org.example.pages;
 
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.example.BasePage;
+import org.example.utils.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class LoginPage extends BasePage<LoginPage> {
+public class LoginPage extends BasePage {
 
     @CacheLookup
     @FindBy(id = "UserNameInput")
@@ -38,12 +37,7 @@ public class LoginPage extends BasePage<LoginPage> {
     private WebElement ClearButtonPassword;
 
 
-    public LoginPage(IOSDriver driver) {
-        super(driver);
-        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-    }
-
-    public LoginPage(AndroidDriver driver) {
+    public LoginPage(AppiumDriver driver) {
         super(driver);
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
