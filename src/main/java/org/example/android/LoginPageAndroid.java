@@ -20,7 +20,7 @@ public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
     @AndroidFindBy(id = "LoginButton")
     private WebElement LoginButton;
 
-    @AndroidFindBy(id = "todoInput")
+    @AndroidFindBy(id = "TodoInput")
     private WebElement InputTodoField;
 
     @AndroidFindBy(id = "clearButtonUserName")

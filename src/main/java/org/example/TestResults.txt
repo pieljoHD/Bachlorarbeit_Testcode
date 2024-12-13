@@ -1,5 +1,165 @@
 
-Finished test class:Android Tests,Duration:61734ms
+Finished test class:Android Tests,Duration:43080ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:40374ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: UserNameInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:42489ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41526ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41904ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:42542ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41505ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41536ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41282ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41070ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41421ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41146ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41064ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41786ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41301ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:42865ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41324ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41788ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:42246ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:41321ms
+Passed tests: 0
+Failed tests: 4
+Failed: addManyTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: todoInput})
+Failed: addAndDeleteTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({AppiumBy.id: todoInput}) (tried for 10 second(s) with 500 milliseconds interval)
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:155899ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -7,7 +167,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:60739ms
+Finished test class:IOS Tests,Duration:155251ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -15,7 +175,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:59788ms
+Finished test class:IOS Tests,Duration:155954ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -23,7 +183,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:59787ms
+Finished test class:IOS Tests,Duration:155456ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -31,7 +191,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:59627ms
+Finished test class:IOS Tests,Duration:154864ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -39,7 +199,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58842ms
+Finished test class:IOS Tests,Duration:155167ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -47,7 +207,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58597ms
+Finished test class:IOS Tests,Duration:155300ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -55,7 +215,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58655ms
+Finished test class:IOS Tests,Duration:155359ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -63,7 +223,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58310ms
+Finished test class:IOS Tests,Duration:155804ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -71,7 +231,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58277ms
+Finished test class:IOS Tests,Duration:155499ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -79,7 +239,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58684ms
+Finished test class:IOS Tests,Duration:155784ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -87,7 +247,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58220ms
+Finished test class:IOS Tests,Duration:155367ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -95,7 +255,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58391ms
+Finished test class:IOS Tests,Duration:155446ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -103,7 +263,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58769ms
+Finished test class:IOS Tests,Duration:155752ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -111,7 +271,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:57783ms
+Finished test class:IOS Tests,Duration:154943ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -119,7 +279,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58478ms
+Finished test class:IOS Tests,Duration:155000ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -127,7 +287,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:59699ms
+Finished test class:IOS Tests,Duration:155046ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -135,7 +295,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58575ms
+Finished test class:IOS Tests,Duration:155206ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -143,7 +303,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58648ms
+Finished test class:IOS Tests,Duration:155525ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -151,167 +311,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:59308ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:148429ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147676ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147529ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147484ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147158ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147848ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147570ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:148280ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147769ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:148149ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147935ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147417ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147310ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147509ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:148086ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147376ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147650ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147417ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147803ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:147093ms
+Finished test class:IOS Tests,Duration:154736ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -320,5 +320,5 @@ Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
 ---------------------------------END OF ALL TESTS---------------------------------
-Durchschnnittliche IOS Testzeit: 147674.4 ms
-Durchschnnittliche Android Testzeit: 59045.55 ms
+Durchschnnittliche IOS Testzeit: 155367.9 ms
+Durchschnnittliche Android Testzeit: 41678.5 ms
