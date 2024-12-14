@@ -8,10 +8,10 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-    @Parameters({"platform","device4"})
+    @Parameters({"platform","device4", "wdaLocalPort4"})
     @BeforeMethod
-    public void setUpDriver(String platform, String device) {
-        setUp(platform, device);
+    public void setUpDriver(String platform, String device, int wdaLocalPort) {
+        setUp(platform, device, wdaLocalPort);
     }
 
     @Test

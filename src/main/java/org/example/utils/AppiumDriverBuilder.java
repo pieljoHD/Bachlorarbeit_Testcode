@@ -30,7 +30,7 @@ public class AppiumDriverBuilder {
         return caps;
     }
 
-    public AndroidDriver  installAndroidAppAndGetDriver(String deviceId) {
+    public AndroidDriver installAndroidAppAndGetDriver(String deviceId) {
         caps = setDefaultAndroidCapabilities(caps);
         caps.setCapability("appium:appPackage", "com.example.todolisttestapplication");
         caps.setCapability("appium:appActivity", "com.example.todolisttestapplication.MainActivity");
@@ -41,11 +41,11 @@ public class AppiumDriverBuilder {
         return driver;
     }
 
-    public IOSDriver getDriverIOSSession() {
-        return new IOSDriver(getHubUrl(), getIOSDefaultCapabilities());
+    public IOSDriver getDriverIOSSession(String deviceId, int wdaLocalPort) {
+        return new IOSDriver(getHubUrl(), getIOSDefaultCapabilities(deviceId, wdaLocalPort));
     }
 
-    private DesiredCapabilities getIOSDefaultCapabilities() {
+    private DesiredCapabilities getIOSDefaultCapabilities(String deviceId, int wdaLocalPort) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "ios");
         capabilities.setCapability("appium:automationName", "xcuitest");
@@ -53,6 +53,9 @@ public class AppiumDriverBuilder {
         capabilities.setCapability("appium:bundleId", "jockel.BachlorarbeitTestapp");
         capabilities.setCapability("appium:clearSystemFiles", true);
         capabilities.setCapability("appium:maxTypingFrequency", 30);
+        capabilities.setCapability("appium:udid", deviceId);
+        capabilities.setCapability("appium:wdaLocalPort", wdaLocalPort);
+        capabilities.setCapability("appium:derivedDataPath","/Users/johannespielmeier/Library/Developer/Xcode/DerivedData");
         //let appium choose device
 
         return capabilities;

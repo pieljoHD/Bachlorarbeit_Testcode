@@ -8,3 +8,7 @@ getBundleIdAndroid:
     3. dumpsys window displays | grep -E 'mCurrentFocus'
 
 devicefarm at http://127.0.0.1:4723/device-farm/
+
+IOS sessionStart at:  Event 'newSessionStarted' logged at 1734182062007 (14:14:22 GMT+0100 (Central European Standard Time))
+
+Android sessionStart at: Event 'newSessionStarted' logged at 1734187611919 (15:46:51 GMT+0100 (Central European Standard Time))

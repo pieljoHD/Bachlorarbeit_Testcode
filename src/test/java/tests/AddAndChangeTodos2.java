@@ -7,25 +7,33 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class AddManyTodos extends BaseTest {
+public class AddAndChangeTodos2 extends BaseTest {
 
-    @Parameters({"platform","device3", "wdaLocalPort3"})
+    @Parameters({"platform","device1", "wdaLocalPort1"})
     @BeforeMethod
     public void setUpDriver(String platform, String device, int wdaLocalPort) {
         setUp(platform, device, wdaLocalPort);
     }
 
     @Test
-    public void addManyTodos() {
+    public void addAndChangeTodos() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.loginWithRightCredentials();
 
         TodoPage todoScreen = new TodoPage(driver);
-        for(int i = 0; i<20; i++) {
+        for(int i = 0; i<3; i++) {
             int x = i+1;
             todoScreen.addTodo("TODO" + x,i);
         }
+        todoScreen.changeTodoAndSave("todo1",0);
+        todoScreen.changeTodoAndSave("neuesTodo",1);
+        todoScreen.changeTodoAndCancel("nichtEinTodo",2);
+
+        todoScreen.todoHasTodo("todo1",0);
+        todoScreen.todoHasTodo("neuesTodo",1);
+        todoScreen.todoHasTodo("TODO3",2);
 
         driver.quit();
     }
 }
+

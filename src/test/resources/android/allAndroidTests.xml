@@ -6,10 +6,19 @@
         <listener class-name="utils.ExecutionTimeListener"/>
     </listeners>
     <parameter name="platform" value="Android"/>
+
     <parameter name="device1" value="emulator-5554"/>
+    <parameter name="wdaLocalPort1" value="8100"/>
+
     <parameter name="device2" value="emulator-5556"/>
+    <parameter name="wdaLocalPort2" value="8100"/>
+
     <parameter name="device3" value="emulator-5558"/>
+    <parameter name="wdaLocalPort3" value="8100"/>
+
     <parameter name="device4" value="emulator-5560"/>
+    <parameter name="wdaLocalPort4" value="8100"/>
+
     <test name="Android Tests">
         <classes>
             <class name="tests.AddManyTodos"/>
