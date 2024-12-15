@@ -31,7 +31,5 @@ public class LoginTest extends BaseTest {
 
         loginPage.loginWithCredentials("test123","1234");
         loginPage.checkNotOnLoginPage();
-
-        driver.quit();
     }
 }

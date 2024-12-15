@@ -25,7 +25,5 @@ public class AddManyTodos extends BaseTest {
             int x = i+1;
             todoScreen.addTodo("TODO" + x,i);
         }
-
-        driver.quit();
     }
 }

@@ -27,8 +27,5 @@ public class AddAndDeleteTodos extends BaseTest {
         todoScreen.deleteTodo(0);
         todoScreen.deleteTodo(1);
         todoScreen.todoHasTodo("TODO2", 0);
-
-        driver.quit();
-
     }
 }

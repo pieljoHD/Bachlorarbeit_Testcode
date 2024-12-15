@@ -32,7 +32,5 @@ public class AddAndChangeTodos2 extends BaseTest {
         todoScreen.todoHasTodo("todo1",0);
         todoScreen.todoHasTodo("neuesTodo",1);
         todoScreen.todoHasTodo("TODO3",2);
-
-        driver.quit();
     }
 }

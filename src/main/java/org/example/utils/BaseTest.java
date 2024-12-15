@@ -5,28 +5,21 @@ import org.testng.annotations.AfterMethod;
 
 public class BaseTest {
     protected AppiumDriver driver;
-    String device;
+    Simulator simulator;
 
     public void setUp(String platform) {
-
-        AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();
-
-        if ("Android".equalsIgnoreCase(platform)) {
-            //device = SimulatorManager.getInstance().getAvailableAndroidDevice();
-            System.out.println("Start with device " + device);
-            driver = appiumDriverBuilder.installAndroidAppAndGetDriver(device);
-        } else if ("IOS".equalsIgnoreCase(platform)) {
-            driver = appiumDriverBuilder.getDriverIOSSession();
+        if (Constants.Android.equalsIgnoreCase(platform)) {
+            simulator = SimulatorManager.getInstance().getAvailableSimulator(Constants.Android);
+        } else if (Constants.IOS.equalsIgnoreCase(platform)) {
+            simulator = SimulatorManager.getInstance().getAvailableSimulator(Constants.IOS);
         } else {
             throw new IllegalArgumentException("Invalid platform: " + platform);
         }
+        driver = simulator.driver;
     }
 
     @AfterMethod
     public void tearDown() {
-        SimulatorManager.getInstance().setDeviceAvailable(device);
-        if (driver != null) {
-            driver.quit();
-        }
+        SimulatorManager.getInstance().setDeviceAvailable(simulator);
     }
 }
