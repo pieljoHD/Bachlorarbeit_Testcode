@@ -8,10 +8,12 @@ public class BaseTest {
     String device;
 
     public void setUp(String platform) {
-        device = SimulatorManager.getInstance().getAvailableDevice();
+
         AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();
-        System.out.println("Start with device " + device);
+
         if ("Android".equalsIgnoreCase(platform)) {
+            //device = SimulatorManager.getInstance().getAvailableAndroidDevice();
+            System.out.println("Start with device " + device);
             driver = appiumDriverBuilder.installAndroidAppAndGetDriver(device);
         } else if ("IOS".equalsIgnoreCase(platform)) {
             driver = appiumDriverBuilder.getDriverIOSSession();

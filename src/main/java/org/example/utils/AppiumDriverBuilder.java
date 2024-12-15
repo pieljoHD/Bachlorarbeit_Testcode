@@ -42,11 +42,11 @@ public class AppiumDriverBuilder {
         return driver;
     }
 
-    public IOSDriver getDriverIOSSession() {
-        return new IOSDriver(getHubUrl(), getIOSDefaultCapabilities());
+    public IOSDriver getDriverIOSSession(Simulator simulator) {
+        return new IOSDriver(getHubUrl(), getIOSDefaultCapabilities(simulator));
     }
 
-    private DesiredCapabilities getIOSDefaultCapabilities() {
+    private DesiredCapabilities getIOSDefaultCapabilities(Simulator simulator) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "ios");
         capabilities.setCapability("appium:automationName", "xcuitest");
@@ -54,8 +54,8 @@ public class AppiumDriverBuilder {
         capabilities.setCapability("appium:bundleId", "jockel.BachlorarbeitTestapp");
         capabilities.setCapability("appium:clearSystemFiles", true);
         capabilities.setCapability("appium:maxTypingFrequency", 30);
-        //capabilities.setCapability("appium:udid", deviceId);
-        //capabilities.setCapability("appium:wdaLocalPort", wdaLocalPort);
+        capabilities.setCapability("appium:udid", simulator.uuid);
+        capabilities.setCapability("appium:wdaLocalPort", simulator.wdaLocalPort);
         capabilities.setCapability("appium:derivedDataPath","/Users/johannespielmeier/Library/Developer/Xcode/DerivedData");
         //let appium choose device
 
