@@ -1,6 +1,8 @@
 package org.example.utils;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 import org.testng.annotations.AfterMethod;
 
 public class BaseTest {
@@ -20,6 +22,11 @@ public class BaseTest {
 
     @AfterMethod
     public void tearDown() {
+        if(simulator.platform.equals(Constants.IOS)) {
+            ((IOSDriver) driver).terminateApp("jockel.BachlorarbeitTestapp");
+        } else if(simulator.platform.equals(Constants.Android)) {
+            ((AndroidDriver) driver).terminateApp("com.example.todolisttestapplication");
+        }
         SimulatorManager.getInstance().setDeviceAvailable(simulator);
     }
 }

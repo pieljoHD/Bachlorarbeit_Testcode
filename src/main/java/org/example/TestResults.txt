@@ -219,3 +219,38 @@ Passed: " + result.getName()
 Failed tests: 1
 Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: UserNameInput
 ------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:29109ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 1
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: UserNameInput
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:28151ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:29502ms
+Passed tests: 3
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 2
+Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: UserNameInput
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: UserNameInput
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:28545ms
+Passed tests: 3
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 2
+Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: UserNameInput
+Failed: addManyTodos - java.lang.AssertionError: expected [true] but found [false]
+------------------------------------------------------------------------
