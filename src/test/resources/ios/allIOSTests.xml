@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Smoke Tests ios" configfailurepolicy="continue" verbose="10">
+<suite name="Smoke Tests ios" configfailurepolicy="continue" verbose="10" parallel="classes" thread-count="4">
     <listeners>
         <listener class-name="utils.ExecutionTimeListener"/>
     </listeners>
@@ -11,7 +11,6 @@
             <class name="tests.AddManyTodos"/>
             <class name="tests.AddAndDeleteTodos"/>
             <class name="tests.AddAndChangeTodos"/>
-
         </classes>
     </test>
 </suite>
