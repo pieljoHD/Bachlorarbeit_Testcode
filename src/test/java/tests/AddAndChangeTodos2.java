@@ -9,10 +9,10 @@ import org.testng.annotations.Test;
 
 public class AddAndChangeTodos2 extends BaseTest {
 
-    @Parameters({"platform","device1", "wdaLocalPort1"})
+    @Parameters("platform")
     @BeforeMethod
-    public void setUpDriver(String platform, String device, int wdaLocalPort) {
-        setUp(platform, device, wdaLocalPort);
+    public void setUpDriver(String platform) {
+        setUp(platform);
     }
 
     @Test
@@ -36,4 +36,3 @@ public class AddAndChangeTodos2 extends BaseTest {
         driver.quit();
     }
 }
-

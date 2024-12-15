@@ -9,10 +9,10 @@ import org.testng.annotations.Test;
 
 public class AddManyTodos extends BaseTest {
 
-    @Parameters({"platform","device3", "wdaLocalPort3"})
+    @Parameters("platform")
     @BeforeMethod
-    public void setUpDriver(String platform, String device, int wdaLocalPort) {
-        setUp(platform, device, wdaLocalPort);
+    public void setUpDriver(String platform) {
+        setUp(platform);
     }
 
     @Test

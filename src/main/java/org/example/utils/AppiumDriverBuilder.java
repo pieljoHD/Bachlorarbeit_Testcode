@@ -30,22 +30,23 @@ public class AppiumDriverBuilder {
         return caps;
     }
 
-    public AndroidDriver installAndroidAppAndGetDriver(String deviceId) {
+    public AndroidDriver installAndroidAppAndGetDriver(String device) {
         caps = setDefaultAndroidCapabilities(caps);
         caps.setCapability("appium:appPackage", "com.example.todolisttestapplication");
         caps.setCapability("appium:appActivity", "com.example.todolisttestapplication.MainActivity");
         caps.setCapability("appium:disableIdLocatorAutocompletion", true);
-        caps.setCapability("appium:udid", deviceId);
+        caps.setCapability("appium:udid", device);
+
         driver = new AndroidDriver(getHubUrl(), caps);
 
         return driver;
     }
 
-    public IOSDriver getDriverIOSSession(String deviceId, int wdaLocalPort) {
-        return new IOSDriver(getHubUrl(), getIOSDefaultCapabilities(deviceId, wdaLocalPort));
+    public IOSDriver getDriverIOSSession() {
+        return new IOSDriver(getHubUrl(), getIOSDefaultCapabilities());
     }
 
-    private DesiredCapabilities getIOSDefaultCapabilities(String deviceId, int wdaLocalPort) {
+    private DesiredCapabilities getIOSDefaultCapabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "ios");
         capabilities.setCapability("appium:automationName", "xcuitest");
@@ -53,8 +54,8 @@ public class AppiumDriverBuilder {
         capabilities.setCapability("appium:bundleId", "jockel.BachlorarbeitTestapp");
         capabilities.setCapability("appium:clearSystemFiles", true);
         capabilities.setCapability("appium:maxTypingFrequency", 30);
-        capabilities.setCapability("appium:udid", deviceId);
-        capabilities.setCapability("appium:wdaLocalPort", wdaLocalPort);
+        //capabilities.setCapability("appium:udid", deviceId);
+        //capabilities.setCapability("appium:wdaLocalPort", wdaLocalPort);
         capabilities.setCapability("appium:derivedDataPath","/Users/johannespielmeier/Library/Developer/Xcode/DerivedData");
         //let appium choose device
 

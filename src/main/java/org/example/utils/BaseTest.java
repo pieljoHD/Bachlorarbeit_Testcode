@@ -5,13 +5,16 @@ import org.testng.annotations.AfterMethod;
 
 public class BaseTest {
     protected AppiumDriver driver;
+    String device;
 
-    public void setUp(String platform, String deviceId, int wdaLocalPort) {
-        AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();;
+    public void setUp(String platform) {
+        device = SimulatorManager.getInstance().getAvailableDevice();
+        AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();
+        System.out.println("Start with device " + device);
         if ("Android".equalsIgnoreCase(platform)) {
-            driver = appiumDriverBuilder.installAndroidAppAndGetDriver(deviceId);
+            driver = appiumDriverBuilder.installAndroidAppAndGetDriver(device);
         } else if ("IOS".equalsIgnoreCase(platform)) {
-            driver = appiumDriverBuilder.getDriverIOSSession(deviceId, wdaLocalPort);
+            driver = appiumDriverBuilder.getDriverIOSSession();
         } else {
             throw new IllegalArgumentException("Invalid platform: " + platform);
         }
@@ -19,6 +22,7 @@ public class BaseTest {
 
     @AfterMethod
     public void tearDown() {
+        SimulatorManager.getInstance().setDeviceAvailable(device);
         if (driver != null) {
             driver.quit();
         }
