@@ -7,7 +7,7 @@ import java.util.List;
 public class SimulatorManager {
     private static SimulatorManager instance;
 
-    private List<Simulator> availableSimulators;
+    private final List<Simulator> availableSimulators;
 
     private SimulatorManager(List<Simulator> deviceList) {
         availableSimulators = deviceList;
@@ -29,7 +29,6 @@ public class SimulatorManager {
                             new Simulator(Constants.IOS,"FB64B13E-FE8D-45D7-96D1-28B1341A55BD",8104)
                     )
             );
-
             instance = new SimulatorManager(deviceList);
         }
         return instance;
@@ -45,6 +44,7 @@ public class SimulatorManager {
                 simulator.driver = appiumDriverBuilder.getDriverIOSSession(simulator);
             }
         }
+        System.out.println("Start with device: " + simulator.uuid + " and Driver " + simulator.driver);
         return simulator;
     }
 

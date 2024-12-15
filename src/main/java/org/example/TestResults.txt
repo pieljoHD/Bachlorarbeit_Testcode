@@ -1,92 +1,5 @@
 
-Finished test class:Android Tests,Duration:37307ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 1
-Failed: addAndChangeTodos - org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.1', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [7e26ec4e-880c-430a-b07d-1805917f89dd, actions {actions=[org.openqa.selenium.interactions.Sequence@2484b2f9]}]
-Capabilities {appium:appActivity: com.example.todolisttestapp..., appium:appPackage: com.example.todolisttestapp..., appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.example.todolisttestapp..., appPackage: com.example.todolisttestapp..., automationName: uiautomator2, disableIdLocatorAutocompletion: true, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableIdLocatorAutocompletion: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 7e26ec4e-880c-430a-b07d-1805917f89dd
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:44957ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:13542ms
-Passed tests: 1
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:33459ms
-Passed tests: 0
-Failed tests: 1
-Failed: addManyTodos - java.lang.AssertionError: expected [true] but found [false]
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:15098ms
-Passed tests: 0
-Failed tests: 1
-Failed: addAndChangeTodos - org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The process has received SIGINT signal
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.1', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [79bc42da-d3f0-4e32-974b-2cbbb9828f96, findElement {using=id, value=clearButton}]
-Capabilities {appium:appActivity: com.example.todolisttestapp..., appium:appPackage: com.example.todolisttestapp..., appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.example.todolisttestapp..., appPackage: com.example.todolisttestapp..., automationName: uiautomator2, disableIdLocatorAutocompletion: true, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableIdLocatorAutocompletion: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 79bc42da-d3f0-4e32-974b-2cbbb9828f96
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:22639ms
-Passed tests: 1
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:32775ms
-Passed tests: 1
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:156ms
-Passed tests: 0
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:32178ms
-Passed tests: 1
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:12836ms
-Passed tests: 0
-Failed tests: 1
-Failed: addManyTodos - org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The process has received SIGINT signal
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.1', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [19d9c1d5-b6f2-42bd-abce-87c424fb14dc, clickElement {id=00000000-0000-d54a-0000-002e00000004}]
-Capabilities {appium:appActivity: com.example.todolisttestapp..., appium:appPackage: com.example.todolisttestapp..., appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.example.todolisttestapp..., appPackage: com.example.todolisttestapp..., automationName: uiautomator2, disableIdLocatorAutocompletion: true, platformName: ANDROID, uuid: emulator-5556}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableIdLocatorAutocompletion: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:uuid: emulator-5556, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (19d9c1d5-b6f2-42bd-abce-87c424fb14dc)] -> id: AddButton]
-Session ID: 19d9c1d5-b6f2-42bd-abce-87c424fb14dc
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:307ms
-Passed tests: 0
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:30226ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:29040ms
+Finished test class:Android Tests,Duration:28773ms
 Passed tests: 5
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -95,7 +8,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:28271ms
+Finished test class:Android Tests,Duration:29486ms
 Passed tests: 5
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -104,17 +17,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:24148ms
-Passed tests: 1
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:22619ms
-Passed tests: 1
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:30037ms
+Finished test class:Android Tests,Duration:28079ms
 Passed tests: 5
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -123,7 +26,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:27702ms
+Finished test class:IOS Tests,Duration:85067ms
 Passed tests: 5
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -131,126 +34,4 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:32636ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 1
-Failed: addAndChangeTodos - org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.1', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, findElement {value=UserNameInput, using=id}]
-Capabilities {appium:appActivity: com.example.todolisttestapp..., appium:appPackage: com.example.todolisttestapp..., appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.example.todolisttestapp..., appPackage: com.example.todolisttestapp..., automationName: uiautomator2, disableIdLocatorAutocompletion: true, platformName: ANDROID, udid: emulator-5558}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5558, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5558, appium:disableIdLocatorAutocompletion: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:udid: emulator-5558, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:30015ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 1
-Failed: addAndChangeTodos - org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.1', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, findElement {using=id, value=UserNameInput}]
-Capabilities {appium:appActivity: com.example.todolisttestapp..., appium:appPackage: com.example.todolisttestapp..., appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.example.todolisttestapp..., appPackage: com.example.todolisttestapp..., automationName: uiautomator2, disableIdLocatorAutocompletion: true, platformName: ANDROID, udid: emulator-5558}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5558, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5558, appium:disableIdLocatorAutocompletion: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:udid: emulator-5558, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:29309ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 1
-Failed: addAndChangeTodos - org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.1', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, findElement {using=id, value=UserNameInput}]
-Capabilities {appium:appActivity: com.example.todolisttestapp..., appium:appPackage: com.example.todolisttestapp..., appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.example.todolisttestapp..., appPackage: com.example.todolisttestapp..., automationName: uiautomator2, disableIdLocatorAutocompletion: true, platformName: ANDROID, udid: emulator-5556}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5556, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5556, appium:disableIdLocatorAutocompletion: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:udid: emulator-5556, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:28972ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 1
-Failed: addAndChangeTodos - org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.1', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, findElement {value=UserNameInput, using=id}]
-Capabilities {appium:appActivity: com.example.todolisttestapp..., appium:appPackage: com.example.todolisttestapp..., appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.example.todolisttestapp..., appPackage: com.example.todolisttestapp..., automationName: uiautomator2, disableIdLocatorAutocompletion: true, platformName: ANDROID, udid: emulator-5556}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5556, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5556, appium:disableIdLocatorAutocompletion: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:udid: emulator-5556, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:33644ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:28018ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 1
-Failed: addAndChangeTodos - org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.1', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, findElement {using=id, value=UserNameInput}]
-Capabilities {appium:appActivity: com.example.todolisttestapp..., appium:appPackage: com.example.todolisttestapp..., appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.example.todolisttestapp..., appPackage: com.example.todolisttestapp..., automationName: uiautomator2, disableIdLocatorAutocompletion: true, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableIdLocatorAutocompletion: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:29140ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 1
-Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: UserNameInput
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:29109ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 1
-Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: UserNameInput
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:28151ms
-Passed tests: 4
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 0
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:29502ms
-Passed tests: 3
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 2
-Failed: addAndDeleteTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: UserNameInput
-Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: UserNameInput
-------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:28545ms
-Passed tests: 3
-Passed: " + result.getName()
-Passed: " + result.getName()
-Passed: " + result.getName()
-Failed tests: 2
-Failed: addAndChangeTodos - org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: UserNameInput
-Failed: addManyTodos - java.lang.AssertionError: expected [true] but found [false]
 ------------------------------------------------------------------------

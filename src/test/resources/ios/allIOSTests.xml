@@ -12,6 +12,7 @@
             <class name="tests.AddAndDeleteTodos"/>
             <class name="tests.AddAndChangeTodos"/>
             <class name="tests.LoginTest"/>
+            <class name="tests.AddAndChangeTodos2"/>
         </classes>
     </test>
 </suite>
