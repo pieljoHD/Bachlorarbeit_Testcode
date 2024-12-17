@@ -1,28 +1,11 @@
 package tests;
 
-import io.appium.java_client.AppiumDriver;
 import org.example.pages.LoginPage;
 import org.example.pages.TodoPage;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
+import org.example.utils.BaseTest;
 import org.testng.annotations.Test;
-import utils.SessionManager;
 
-import static utils.SessionManager.getInstance;
-
-public class AddManyTodos {
-
-    AppiumDriver driver = null;
-    SessionManager sessionManager = null;
-
-    @Parameters("platform")
-    @BeforeMethod
-    public void setUpDriver(String platform) {
-        sessionManager = getInstance(platform);
-        driver = sessionManager.driver;
-        sessionManager.openApp();
-    }
-
+public class AddManyTodos extends BaseTest {
     @Test
     public void addManyTodos() {
         LoginPage loginPage = new LoginPage(driver);
@@ -33,7 +16,5 @@ public class AddManyTodos {
             int x = i+1;
             todoScreen.addTodo("TODO" + x,i);
         }
-
-        sessionManager.closeApp();
     }
 }

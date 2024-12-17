@@ -1,27 +1,11 @@
 package tests;
 
-import io.appium.java_client.AppiumDriver;
 import org.example.pages.LoginPage;
 import org.example.pages.TodoPage;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
+import org.example.utils.BaseTest;
 import org.testng.annotations.Test;
-import utils.SessionManager;
 
-import static utils.SessionManager.getInstance;
-
-public class AddAndChangeTodos {
-    AppiumDriver driver = null;
-    SessionManager sessionManager = null;
-
-    @Parameters("platform")
-    @BeforeMethod
-    public void setUpDriver(String platform) {
-        sessionManager = getInstance(platform);
-        driver = sessionManager.driver;
-        sessionManager.openApp();
-    }
-
+public class AddAndChangeTodos extends BaseTest {
     @Test
     public void addAndChangeTodos() {
         LoginPage loginPage = new LoginPage(driver);
@@ -39,7 +23,5 @@ public class AddAndChangeTodos {
         todoScreen.todoHasTodo("todo1",0);
         todoScreen.todoHasTodo("neuesTodo",1);
         todoScreen.todoHasTodo("TODO3",2);
-
-        sessionManager.closeApp();
     }
 }

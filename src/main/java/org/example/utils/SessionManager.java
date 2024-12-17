@@ -1,9 +1,8 @@
-package utils;
+package org.example.utils;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
-import org.example.utils.AppiumDriverBuilder;
 
 public final class SessionManager {
 
@@ -18,7 +17,7 @@ public final class SessionManager {
         if(INSTANCE == null) {
             System.out.println("Create new SessionManager");
             AppiumDriver tmpDriver = null;
-            AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();;
+            AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();
             if(platform.equals("Android")) {
                 tmpDriver = appiumDriverBuilder.installAndroidAppAndGetDriver();
             } else if(platform.equals("IOS")) {

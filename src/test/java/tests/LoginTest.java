@@ -1,26 +1,10 @@
 package tests;
 
-import io.appium.java_client.AppiumDriver;
 import org.example.pages.LoginPage;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
+import org.example.utils.BaseTest;
 import org.testng.annotations.Test;
-import utils.SessionManager;
 
-import static utils.SessionManager.getInstance;
-
-public class LoginTest  {
-    AppiumDriver driver = null;
-    SessionManager sessionManager = null;
-
-    @Parameters("platform")
-    @BeforeMethod
-    public void setUpDriver(String platform) {
-        sessionManager = getInstance(platform);
-        driver = sessionManager.driver;
-        sessionManager.openApp();
-    }
-
+public class LoginTest extends BaseTest {
     @Test
     public void testIDLogin()  {
         LoginPage loginPage = new LoginPage(driver);
@@ -38,7 +22,5 @@ public class LoginTest  {
 
         loginPage.loginWithCredentials("test123","1234");
         loginPage.checkNotOnLoginPage();
-
-        sessionManager.closeApp();
     }
 }

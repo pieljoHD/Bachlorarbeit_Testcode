@@ -1,1 +1,9 @@
 
+Finished test class:IOS Tests,Duration:141645ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
