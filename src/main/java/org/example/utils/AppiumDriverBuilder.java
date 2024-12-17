@@ -47,6 +47,7 @@ public class AppiumDriverBuilder {
     private DesiredCapabilities getIOSDefaultCapabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "ios");
+        capabilities.setCapability("appium:platformVersion", "17.5");
         capabilities.setCapability("appium:automationName", "xcuitest");
         capabilities.setCapability("appium:appPushTimeout", 120000);
         capabilities.setCapability("appium:bundleId", "jockel.BachlorarbeitTestapp");

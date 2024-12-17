@@ -3,18 +3,9 @@ package tests;
 import org.example.pages.LoginPage;
 import org.example.pages.TodoPage;
 import org.example.utils.BaseTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class AddManyTodos extends BaseTest {
-
-    @Parameters("platform")
-    @BeforeMethod
-    public void setUpDriver(String platform) {
-        setUp(platform);
-    }
-
     @Test
     public void addManyTodos() {
         LoginPage loginPage = new LoginPage(driver);
@@ -25,7 +16,5 @@ public class AddManyTodos extends BaseTest {
             int x = i+1;
             todoScreen.addTodo("TODO" + x,i);
         }
-
-        driver.quit();
     }
 }

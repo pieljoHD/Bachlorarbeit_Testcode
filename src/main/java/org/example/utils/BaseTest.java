@@ -2,10 +2,14 @@ package org.example.utils;
 
 import io.appium.java_client.AppiumDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 public class BaseTest {
     protected AppiumDriver driver;
 
+    @Parameters("platform")
+    @BeforeMethod
     public void setUp(String platform) {
         AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();;
         if ("Android".equalsIgnoreCase(platform)) {

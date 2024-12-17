@@ -2,17 +2,9 @@ package tests;
 
 import org.example.pages.LoginPage;
 import org.example.utils.BaseTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
-    @Parameters("platform")
-    @BeforeMethod
-    public void setUpDriver(String platform) {
-        setUp(platform);
-    }
-
     @Test
     public void testIDLogin()  {
         LoginPage loginPage = new LoginPage(driver);
@@ -30,7 +22,5 @@ public class LoginTest extends BaseTest {
 
         loginPage.loginWithCredentials("test123","1234");
         loginPage.checkNotOnLoginPage();
-
-        driver.quit();
     }
 }
