@@ -48,7 +48,7 @@ public class SimulatorManager {
         return simulator;
     }
 
-    public synchronized Simulator getAvailableSimulatorFromList(String platform) {
+    private synchronized Simulator getAvailableSimulatorFromList(String platform) {
         for (Simulator simulator : availableSimulators) {
             if (platform.equals(simulator.platform)) {
                 availableSimulators.remove(simulator);
