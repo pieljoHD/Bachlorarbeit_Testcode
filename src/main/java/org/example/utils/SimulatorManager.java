@@ -20,8 +20,6 @@ public class SimulatorManager {
                     Arrays.asList(
                             new Simulator(Constants.Android,"emulator-5554",8100),
                             new Simulator(Constants.Android,"emulator-5556",8100),
-                            new Simulator(Constants.Android,"emulator-5558",8100),
-                            new Simulator(Constants.Android,"emulator-5560",8100),
 
                             new Simulator(Constants.IOS,"2FD1A406-EC0D-4C71-A112-33F516F861EA",8101),
                             new Simulator(Constants.IOS,"48DA9BFA-5470-4DE9-800F-EF3B38F9FB0F",8102),
@@ -34,21 +32,7 @@ public class SimulatorManager {
         return instance;
     }
 
-    public Simulator getAvailableSimulator(String platform) {
-        Simulator simulator = getAvailableSimulatorFromList(platform);
-        if(simulator.driver == null) {
-            AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();
-            if(platform.equals(Constants.Android)) {
-                simulator.driver = appiumDriverBuilder.installAndroidAppAndGetDriver(simulator);
-            } else if(platform.equals(Constants.IOS)) {
-                simulator.driver = appiumDriverBuilder.getDriverIOSSession(simulator);
-            }
-        }
-        System.out.println("Start with device: " + simulator.uuid + " and Driver " + simulator.driver);
-        return simulator;
-    }
-
-    private synchronized Simulator getAvailableSimulatorFromList(String platform) {
+    synchronized Simulator getAvailableSimulatorFromList(String platform) {
         for (Simulator simulator : availableSimulators) {
             if (platform.equals(simulator.platform)) {
                 availableSimulators.remove(simulator);

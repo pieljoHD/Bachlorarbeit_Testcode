@@ -10,14 +10,16 @@ public class BaseTest {
     Simulator simulator;
 
     public void setUp(String platform) {
+        AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();
         if (Constants.Android.equalsIgnoreCase(platform)) {
-            simulator = SimulatorManager.getInstance().getAvailableSimulator(Constants.Android);
+            simulator = SimulatorManager.getInstance().getAvailableSimulatorFromList(Constants.Android);
+            driver = appiumDriverBuilder.installAndroidAppAndGetDriver(simulator);
         } else if (Constants.IOS.equalsIgnoreCase(platform)) {
-            simulator = SimulatorManager.getInstance().getAvailableSimulator(Constants.IOS);
+            simulator = SimulatorManager.getInstance().getAvailableSimulatorFromList(Constants.IOS);
+            driver = appiumDriverBuilder.getDriverIOSSession(simulator);
         } else {
             throw new IllegalArgumentException("Invalid platform: " + platform);
         }
-        driver = simulator.driver;
         openApp();
     }
 

@@ -35,3 +35,29 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:112ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:157ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:34962ms
+Passed tests: 5
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:44453ms
+Passed tests: 5
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------

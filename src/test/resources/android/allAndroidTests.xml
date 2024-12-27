@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM
         "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Smoke Tests Android" configfailurepolicy="continue" verbose="10" parallel="classes" thread-count="4">
+<suite name="Smoke Tests Android" configfailurepolicy="continue" verbose="10" parallel="classes" thread-count="2">
     <listeners>
         <listener class-name="utils.ExecutionTimeListener"/>
     </listeners>
@@ -13,7 +13,6 @@
             <class name="tests.AddAndChangeTodos"/>
             <class name="tests.AddAndDeleteTodos"/>
             <class name="tests.LoginTest"/>
-            <class name="tests.AddAndChangeTodos2"/>
         </classes>
     </test>
 </suite>
