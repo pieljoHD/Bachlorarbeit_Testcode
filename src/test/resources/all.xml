@@ -1,0 +1,5 @@
+<!DOCTYPE suite SYSTEM
+        "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke Tests Android" configfailurepolicy="continue" verbose="10">
+</suite>

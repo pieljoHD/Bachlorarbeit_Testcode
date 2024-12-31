@@ -322,3 +322,197 @@ Failed tests: 0
 ---------------------------------END OF ALL TESTS---------------------------------
 Durchschnnittliche IOS Testzeit: 179010.95 ms
 Durchschnnittliche Android Testzeit: 66516.57 ms
+
+Finished test class:IOS Tests,Duration:322ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:9062ms
+Passed tests: 0
+Failed tests: 1
+Failed: addManyTodos - org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.1', java.version: '21.0.4'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [b0636607-6419-483f-b342-024e44cf6066, sendKeysToElement {id=66000000-0000-0000-85DE-000000000000, value=[Ljava.lang.CharSequence;@56102e1c}]
+Capabilities {appium:appPushTimeout: 120000, appium:automationName: xcuitest, appium:bundleId: jockel.BachlorarbeitTestapp, appium:clearSystemFiles: true, appium:databaseEnabled: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:maxTypingFrequency: 30, appium:networkConnectionEnabled: false, appium:platformVersion: 17.5, appium:takesScreenshot: true, appium:udid: 2FD1A406-EC0D-4C71-A112-33F..., appium:webStorageEnabled: false, platformName: IOS}
+Element: [[IOSDriver:  on IOS (b0636607-6419-483f-b342-024e44cf6066)] -> xpath: //*[@name='TodoInput']]
+Session ID: b0636607-6419-483f-b342-024e44cf6066
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:11555ms
+Passed tests: 0
+Failed tests: 1
+Failed: addManyTodos - java.lang.AssertionError: expected [true] but found [false]
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:30ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:24ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:31ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:25ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:31ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:31ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:24ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:25ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:25ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:25ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:30ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:30ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:24ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:29ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:31ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:22ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:23ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:23ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:18ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:22ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:17ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:18ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:19ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:21ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:21ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:24ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:25ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:27ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:25ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:25ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:19ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:24ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:25ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:24ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:20ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:24ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:23ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:27ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:28ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+---------------------------------END OF ALL TESTS---------------------------------
+Durchschnnittliche IOS Testzeit: 85490.48 ms
+Durchschnnittliche Android Testzeit: 33527.375 ms
+
+Finished test class:Android Tests,Duration:9030ms
+Passed tests: 0
+Failed tests: 1
+Failed: addManyTodos - org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The process has received SIGINT signal
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.1', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e4abd08-02ff-4e3a-9bcb-50a6ccf2d2ec, isElementDisplayed {id=00000000-0000-0243-0000-001100000004}]
+Capabilities {appium:appActivity: com.example.todolisttestapp..., appium:appPackage: com.example.todolisttestapp..., appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.example.todolisttestapp..., appPackage: com.example.todolisttestapp..., automationName: uiautomator2, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5560, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5560, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (5e4abd08-02ff-4e3a-9bcb-50a6ccf2d2ec)] -> xpath: //*[@resource-id='PasswortInput']]
+Session ID: 5e4abd08-02ff-4e3a-9bcb-50a6ccf2d2ec
+------------------------------------------------------------------------
