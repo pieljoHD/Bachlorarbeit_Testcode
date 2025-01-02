@@ -322,3 +322,93 @@ Failed tests: 0
 ---------------------------------END OF ALL TESTS---------------------------------
 Durchschnnittliche IOS Testzeit: 179010.95 ms
 Durchschnnittliche Android Testzeit: 66516.57 ms
+
+Finished test class:Android Tests,Duration:44498ms
+Passed tests: 3
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 1
+Failed: addManyTodos - java.lang.AssertionError: expected [true] but found [false]
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:67471ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:2891ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:293ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:176147ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:71040ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:38360ms
+Passed tests: 2
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 2
+Failed: addManyTodos - java.lang.AssertionError: expected [true] but found [false]
+Failed: addAndChangeTodos - java.lang.AssertionError: expected [true] but found [false]
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:71318ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:592ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:53051ms
+Passed tests: 2
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 2
+Failed: addManyTodos - java.lang.AssertionError: expected [true] but found [false]
+Failed: addAndChangeTodos - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='PasswortInput'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.1', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.example.todolisttestapp..., appium:appPackage: com.example.todolisttestapp..., appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.example.todolisttestapp..., appPackage: com.example.todolisttestapp..., automationName: uiautomator2, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 61b21592-d75d-43a3-bf46-c4ed4aa96ae9
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:68535ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:70006ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------

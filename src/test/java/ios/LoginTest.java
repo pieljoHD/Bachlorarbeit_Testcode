@@ -6,11 +6,10 @@ import org.example.ios.LoginPageIOS;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTestIOS {
-    IOSDriver driver;
 
     @Test
-    public void testIDLogin() throws InterruptedException {
-        driver = getDriver();
+    public void loginTest() {
+        IOSDriver driver = getDriver();
         LoginPageIOS loginPageIOS = new LoginPageIOS(driver);
         loginPageIOS.loginWithCredentials("test123","falsch");
         loginPageIOS.checkErrorTextVisible();

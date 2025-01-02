@@ -4,7 +4,7 @@ import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class LoginPageIOS extends BasePageIOS<LoginPageIOS>{
+public class LoginPageIOS extends BasePageIOS{
     private final By UserNameInput = By.xpath("//*[@name='UserNameInput']");
     private final By PasswortInput = By.xpath("//*[@name='PasswortInput']");
     private final By ErrorText = By.xpath("//*[@name='ErrorText']");
@@ -38,7 +38,7 @@ public class LoginPageIOS extends BasePageIOS<LoginPageIOS>{
         click(LoginButton);
     }
 
-    public void checkNotOnLoginPage() throws InterruptedException {
+    public void checkNotOnLoginPage() {
         waitElementToBeClickable(InputTodoField);
         Assert.assertTrue(isElementDisplayed(InputTodoField));
     }

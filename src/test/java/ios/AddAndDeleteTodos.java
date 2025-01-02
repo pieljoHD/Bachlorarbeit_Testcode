@@ -20,6 +20,6 @@ public class AddAndDeleteTodos extends BaseTestIOS {
         }
         todoScreen.deleteTodo(0);
         todoScreen.deleteTodo(1);
-        todoScreen.todoHasTodo("TODO2",0);
+        todoScreen.todoHasText("TODO2",0);
     }
 }

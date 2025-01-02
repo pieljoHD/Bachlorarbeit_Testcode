@@ -4,7 +4,7 @@ import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
+public class TodoScreenIOS extends BasePageIOS {
     private final By AddTodoButton = By.xpath("//*[@name='AddButton']");
     private final By InputTodoField = By.xpath("//*[@name='TodoInput']");
     private final By InputTodoChangeField = By.xpath("//*[@name='changeTodoInput']");
@@ -16,10 +16,6 @@ public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
 
     public TodoScreenIOS(IOSDriver driver) {
         super(driver);
-    }
-
-    public void clearField() {
-        click(ClearButton);
     }
 
     public void addTodo(String todo, int index) {
@@ -34,12 +30,8 @@ public class TodoScreenIOS extends BasePageIOS<TodoScreenIOS> {
         click(deleteButtonNr(index));
     }
 
-    public void todoHasTodo(String text, int index) {
+    public void todoHasText(String text, int index) {
         Assert.assertEquals(getElement(todoNr(index)).getAttribute("label"), text);
-    }
-
-    public void todoHasNotTodo(String text, int index) {
-        Assert.assertNotEquals(getElement(todoNr(index)).getAttribute("label"), text);
     }
 
     public void changeTodoAndSave(String text, int index) {

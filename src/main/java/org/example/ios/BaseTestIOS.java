@@ -2,31 +2,26 @@ package org.example.ios;
 
 import io.appium.java_client.ios.IOSDriver;
 import org.example.utils.AppiumDriverBuilder;
-import org.testng.annotations.*;
-
-import java.io.IOException;
-import java.time.format.DateTimeFormatter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 
 public class BaseTestIOS {
-    public AppiumDriverBuilder appiumDriverBuilder;
-    private IOSDriver driver = null;
-    public Boolean localhostServerExecution = false;
+    private IOSDriver driver;
 
     public BaseTestIOS() {}
 
     @BeforeMethod(alwaysRun = true)
-    public void initSession() throws IOException {
-        appiumDriverBuilder = new AppiumDriverBuilder();
-        localhostServerExecution = true;
-        driver = appiumDriverBuilder.getDriverIOSSession();
+    public void initSession() {
+        AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();
+        driver = appiumDriverBuilder.installIOSAppAndGetDriver();
         getDriver().activateApp("jockel.BachlorarbeitTestapp");
     }
 
     @AfterMethod(alwaysRun = true)
-    public  void closeApp() {
+    public void closeApp() {
         getDriver().terminateApp("jockel.BachlorarbeitTestapp");
-        getDriver().quit();
+        driver.quit();
     }
 
     public IOSDriver getDriver() {
