@@ -7,11 +7,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
-import java.io.IOException;
-
 public class BaseTestAndroid {
     private AndroidDriver driver = null;
-    public AppiumDriverBuilder appiumDriverBuilder;
     public static Boolean localhostServerExecution = false;
 
     public BaseTestAndroid() {
@@ -19,15 +16,15 @@ public class BaseTestAndroid {
     }
 
     @BeforeMethod
-    public void openApp() throws IOException{
-        appiumDriverBuilder = new AppiumDriverBuilder();
+    public void openApp() {
+        AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();
         driver = appiumDriverBuilder.installAndroidAppAndGetDriver();
     }
 
     @AfterMethod(alwaysRun = true)
     public void closeApp() {
         AndroidDriver driver = getDriver();
-        driver.quit();
+        driver.close();
     }
 
     @AfterSuite(alwaysRun = true)

@@ -4,12 +4,12 @@ import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
+public class LoginPageAndroid extends BasePageAndroid {
     private final By UserNameInput = By.xpath("//*[@resource-id='UserNameInput']");
     private final By PasswortInput = By.xpath("//*[@resource-id='PasswortInput']");
     private final By ErrorText = By.xpath("//*[@resource-id='ErrorText']");
     private final By LoginButton = By.xpath("//*[@resource-id='LoginButton']");
-    private final By InputTodoField = By.xpath("//*[@resource-id='todoInput']");
+    private final By InputTodoField = By.xpath("//*[@resource-id='TodoInput']");
     private final By ClearButtonUserName = By.xpath("//*[@resource-id='clearButtonUserName']");
     private final By ClearButtonPassword = By.xpath("//*[@resource-id='clearButtonPassword']");
 

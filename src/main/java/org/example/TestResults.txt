@@ -322,3 +322,36 @@ Failed tests: 0
 ---------------------------------END OF ALL TESTS---------------------------------
 Durchschnnittliche IOS Testzeit: 179010.95 ms
 Durchschnnittliche Android Testzeit: 66516.57 ms
+
+Finished test class:Android Tests,Duration:44498ms
+Passed tests: 3
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 1
+Failed: addManyTodos - java.lang.AssertionError: expected [true] but found [false]
+------------------------------------------------------------------------
+Finished test class:Android Tests,Duration:67471ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:2891ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:293ms
+Passed tests: 0
+Failed tests: 0
+------------------------------------------------------------------------
+Finished test class:IOS Tests,Duration:176147ms
+Passed tests: 4
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Passed: " + result.getName()
+Failed tests: 0
+------------------------------------------------------------------------

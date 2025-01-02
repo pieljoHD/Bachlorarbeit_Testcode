@@ -9,45 +9,30 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class AppiumDriverBuilder {
-
-    DesiredCapabilities caps = new DesiredCapabilities();
-    AndroidDriver driver;
-
     private URL getHubUrl() {
         URL remoteAddress = null;
         try {
             remoteAddress = new URL("http://127.0.0.1:4723/wd/hub");
         } catch (MalformedURLException e) {
-            Assert.fail("Selenium Grid address is malformed. Exception message: ", e);
+            Assert.fail("Failed to connect to Server: ", e);
         }
         return remoteAddress;
     }
 
-    public DesiredCapabilities setDefaultAndroidCapabilities(DesiredCapabilities caps) {
-        caps.setCapability("platformName", "android");
-        caps.setCapability("appium:automationName", "uiautomator2");
-
-        return caps;
-    }
-
     public AndroidDriver installAndroidAppAndGetDriver() {
-        caps = setDefaultAndroidCapabilities(caps);
-        //caps.setCapability("appium:fullReset", true);
-        caps.setCapability("appium:appPackage", "com.example.todolisttestapplication");
-        caps.setCapability("appium:appActivity", "com.example.todolisttestapplication.MainActivity");
-        //caps.setCapability("appium:disableIdLocatorAutocompletion", true);
-        driver = new AndroidDriver(getHubUrl(), caps);
-
-        return driver;
+        DesiredCapabilities caps = getDefaultAndroidCapabilities();
+        return new AndroidDriver(getHubUrl(), caps);
     }
 
-    public IOSDriver getDriverIOSSession() {
-        return new IOSDriver(getHubUrl(), getIOSDefaultCapabilities());
+    public IOSDriver installIOSAppAndGetDriver() {
+        DesiredCapabilities caps = getDefaultIOSCapabilities();
+        return new IOSDriver(getHubUrl(), caps);
     }
 
-    private DesiredCapabilities getIOSDefaultCapabilities() {
+    private DesiredCapabilities getDefaultIOSCapabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "ios");
+        capabilities.setCapability("appium:platformVersion", "17.5");
         capabilities.setCapability("appium:automationName", "xcuitest");
         capabilities.setCapability("appium:appPushTimeout", 120000);
         capabilities.setCapability("appium:bundleId", "jockel.BachlorarbeitTestapp");
@@ -56,6 +41,19 @@ public class AppiumDriverBuilder {
         //let appium choose device
 
         return capabilities;
+    }
+
+    private DesiredCapabilities getDefaultAndroidCapabilities() {
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("platformName", "android");
+        caps.setCapability("appium:automationName", "uiautomator2");
+        //caps.setCapability("appium:fullReset", true);
+        caps.setCapability("appium:appPackage", "com.example.todolisttestapplication");
+        caps.setCapability("appium:appActivity", "com.example.todolisttestapplication.MainActivity");
+        //caps.setCapability("appium:disableIdLocatorAutocompletion", true);
+        //let appium choose device
+
+        return caps;
     }
 }
 

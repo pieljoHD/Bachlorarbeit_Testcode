@@ -2,10 +2,9 @@ package org.example.ios;
 
 import io.appium.java_client.ios.IOSDriver;
 import org.example.utils.AppiumDriverBuilder;
-import org.testng.annotations.*;
-
-import java.io.IOException;
-import java.time.format.DateTimeFormatter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 
 
 public class BaseTestIOS {
@@ -16,16 +15,20 @@ public class BaseTestIOS {
     public BaseTestIOS() {}
 
     @BeforeMethod(alwaysRun = true)
-    public void initSession() throws IOException {
+    public void initSession() {
         appiumDriverBuilder = new AppiumDriverBuilder();
         localhostServerExecution = true;
-        driver = appiumDriverBuilder.getDriverIOSSession();
+        driver = appiumDriverBuilder.installIOSAppAndGetDriver();
         getDriver().activateApp("jockel.BachlorarbeitTestapp");
     }
 
     @AfterMethod(alwaysRun = true)
-    public  void closeApp() {
+    public void closeApp() {
         getDriver().terminateApp("jockel.BachlorarbeitTestapp");
+    }
+
+    @AfterSuite(alwaysRun = true)
+    public void quitDriverSession() {
         getDriver().quit();
     }
 

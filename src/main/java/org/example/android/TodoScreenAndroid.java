@@ -4,9 +4,9 @@ import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
-    private final By AddTodoButton = By.xpath("//*[@resource-id='addButton']");
-    private final By InputTodoField = By.xpath("//*[@resource-id='todoInput']");
+public class TodoScreenAndroid extends BasePageAndroid {
+    private final By AddTodoButton = By.xpath("//*[@resource-id='AddButton']");
+    private final By InputTodoField = By.xpath("//*[@resource-id='TodoInput']");
     private final By InputTodoChangeField = By.xpath("//*[@resource-id='changeTodoInput']");
     private final By SaveTodoChangeButton = By.xpath("//*[@text='speichern']");
     private final By CancelTodoChangeButton = By.xpath("//*[@text='abbrechen']");
@@ -16,10 +16,6 @@ public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
 
     public TodoScreenAndroid(AndroidDriver driver) {
         super(driver);
-    }
-
-    public void clearField() {
-        click(ClearButton);
     }
 
     public void addTodo(String todo, int index) {
@@ -36,10 +32,6 @@ public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
 
     public void todoHasTodo(String text, int index) {
         Assert.assertEquals(getElement(todoNr(index)).getAttribute("text"), text);
-    }
-
-    public void todoHasNotTodo(String text, int index) {
-        Assert.assertNotEquals(getElement(todoNr(index)).getAttribute("text"), text);
     }
 
     public void changeTodoAndSave(String text, int index) {
