@@ -30,7 +30,7 @@ public class TodoScreenIOS extends BasePageIOS {
         click(deleteButtonNr(index));
     }
 
-    public void todoHasTodo(String text, int index) {
+    public void todoHasText(String text, int index) {
         Assert.assertEquals(getElement(todoNr(index)).getAttribute("label"), text);
     }
 

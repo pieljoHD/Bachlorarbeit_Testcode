@@ -24,11 +24,11 @@ public class LoginPageAndroid extends BasePageAndroid {
         Assert.assertTrue(isElementDisplayed(InputTodoField));
     }
 
-    public void clearUserName() {
+    public void clearFieldUserName() {
         click(ClearButtonUserName);
     }
 
-    public void clearPassword() {
+    public void clearFieldPassword() {
         click(ClearButtonPassword);
     }
 

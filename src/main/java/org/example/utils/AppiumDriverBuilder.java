@@ -12,7 +12,7 @@ public class AppiumDriverBuilder {
     private URL getHubUrl() {
         URL remoteAddress = null;
         try {
-            remoteAddress = new URL("http://127.0.0.1:4723/wd/hub");
+            remoteAddress = new URL("http://127.0.0.1:4723");
         } catch (MalformedURLException e) {
             Assert.fail("Failed to connect to Server: ", e);
         }

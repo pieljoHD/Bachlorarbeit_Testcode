@@ -3,21 +3,17 @@ package org.example.ios;
 import io.appium.java_client.ios.IOSDriver;
 import org.example.utils.AppiumDriverBuilder;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
 
 public class BaseTestIOS {
-    public AppiumDriverBuilder appiumDriverBuilder;
-    private IOSDriver driver = null;
-    public Boolean localhostServerExecution = false;
+    private IOSDriver driver;
 
     public BaseTestIOS() {}
 
     @BeforeMethod(alwaysRun = true)
     public void initSession() {
-        appiumDriverBuilder = new AppiumDriverBuilder();
-        localhostServerExecution = true;
+        AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();
         driver = appiumDriverBuilder.installIOSAppAndGetDriver();
         getDriver().activateApp("jockel.BachlorarbeitTestapp");
     }
@@ -25,11 +21,7 @@ public class BaseTestIOS {
     @AfterMethod(alwaysRun = true)
     public void closeApp() {
         getDriver().terminateApp("jockel.BachlorarbeitTestapp");
-    }
-
-    @AfterSuite(alwaysRun = true)
-    public void quitDriverSession() {
-        getDriver().quit();
+        driver.quit();
     }
 
     public IOSDriver getDriver() {

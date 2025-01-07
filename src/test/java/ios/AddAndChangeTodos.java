@@ -24,8 +24,8 @@ public class AddAndChangeTodos extends BaseTestIOS {
         todoScreen.changeTodoAndSave("neuesTodo",1);
         todoScreen.changeTodoAndCancel("nichtEinTodo",2);
 
-        todoScreen.todoHasTodo("todo1",0);
-        todoScreen.todoHasTodo("neuesTodo",1);
-        todoScreen.todoHasTodo("TODO3",2);
+        todoScreen.todoHasText("todo1",0);
+        todoScreen.todoHasText("neuesTodo",1);
+        todoScreen.todoHasText("TODO3",2);
     }
 }

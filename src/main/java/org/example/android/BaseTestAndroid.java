@@ -4,19 +4,15 @@ package org.example.android;
 import io.appium.java_client.android.AndroidDriver;
 import org.example.utils.AppiumDriverBuilder;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTestAndroid {
-    private AndroidDriver driver = null;
-    public static Boolean localhostServerExecution = false;
+    private AndroidDriver driver;
 
-    public BaseTestAndroid() {
-        localhostServerExecution = true;
-    }
+    public BaseTestAndroid() {}
 
     @BeforeMethod
-    public void openApp() {
+    public void initSession() {
         AppiumDriverBuilder appiumDriverBuilder = new AppiumDriverBuilder();
         driver = appiumDriverBuilder.installAndroidAppAndGetDriver();
     }
@@ -24,12 +20,7 @@ public class BaseTestAndroid {
     @AfterMethod(alwaysRun = true)
     public void closeApp() {
         AndroidDriver driver = getDriver();
-        driver.close();
-    }
-
-    @AfterSuite(alwaysRun = true)
-    public void quitDriverSession() {
-        getDriver().quit();
+        driver.quit();
     }
 
     public synchronized AndroidDriver getDriver() {
