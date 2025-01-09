@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
+<!--20-->
 <suite name="Smoke Tests ios" configfailurepolicy="continue" verbose="10">
     <listeners>
         <listener class-name="utils.ExecutionTimeListener"/>

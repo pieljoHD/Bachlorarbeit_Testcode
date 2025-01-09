@@ -16,7 +16,7 @@ public class AppiumDriverBuilder {
     private URL getHubUrl() {
         URL remoteAddress = null;
         try {
-            remoteAddress = new URL("http://127.0.0.1:4723/wd/hub");
+            remoteAddress = new URL("http://127.0.0.1:4723");
         } catch (MalformedURLException e) {
             Assert.fail("Selenium Grid address is malformed. Exception message: ", e);
         }
@@ -48,6 +48,7 @@ public class AppiumDriverBuilder {
     private DesiredCapabilities getIOSDefaultCapabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "ios");
+        capabilities.setCapability("appium:platformVersion", "17.5");
         capabilities.setCapability("appium:automationName", "xcuitest");
         capabilities.setCapability("appium:appPushTimeout", 120000);
         capabilities.setCapability("appium:bundleId", "jockel.BachlorarbeitTestapp");
