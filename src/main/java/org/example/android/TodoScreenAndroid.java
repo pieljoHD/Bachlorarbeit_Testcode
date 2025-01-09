@@ -5,8 +5,8 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
-    private final By AddTodoButton = By.id("addButton");
-    private final By InputTodoField = By.id("todoInput");
+    private final By AddTodoButton = By.id("AddButton");
+    private final By InputTodoField = By.id("TodoInput");
     private final By InputTodoChangeField = By.id("changeTodoInput");
     private final By SaveTodoChangeButton = By.id("speichern");
     private final By CancelTodoChangeButton = By.id("abbrechen");

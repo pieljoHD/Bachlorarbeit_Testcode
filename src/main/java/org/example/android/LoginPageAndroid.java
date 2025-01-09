@@ -9,7 +9,7 @@ public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
     private final By PasswortInput = By.id("PasswortInput");
     private final By ErrorText = By.id("ErrorText");
     private final By LoginButton = By.id("LoginButton");
-    private final By InputTodoField = By.id("todoInput");
+    private final By InputTodoField = By.id("TodoInput");
     private final By ClearButtonUserName = By.id("clearButtonUserName");
     private final By ClearButtonPassword = By.id("clearButtonPassword");
 
