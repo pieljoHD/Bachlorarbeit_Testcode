@@ -11,11 +11,11 @@ import org.testng.Assert;
 
 public class TodoScreenAndroid extends BasePageAndroid<TodoScreenAndroid>{
     @CacheLookup
-    @AndroidFindBy(id = "addButton")
+    @AndroidFindBy(id = "AddButton")
     private WebElement addButton;
 
     @CacheLookup
-    @AndroidFindBy(id = "todoInput")
+    @AndroidFindBy(id = "TodoInput")
     private WebElement todoInput;
 
     @AndroidFindBy(id = "changeTodoInput")

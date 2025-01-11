@@ -25,7 +25,7 @@ public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
     private WebElement LoginButton;
 
     @CacheLookup
-    @AndroidFindBy(id = "todoInput")
+    @AndroidFindBy(id = "TodoInput")
     private WebElement InputTodoField;
 
 
