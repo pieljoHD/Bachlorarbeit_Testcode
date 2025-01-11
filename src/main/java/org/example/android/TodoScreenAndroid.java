@@ -9,10 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class TodoScreenAndroid extends BasePageAndroid<TodoScreenAndroid>{
-    @AndroidFindBy(id = "addButton")
+    @AndroidFindBy(id = "AddButton")
     private WebElement addButton;
 
-    @AndroidFindBy(id = "todoInput")
+    @AndroidFindBy(id = "TodoInput")
     private WebElement todoInput;
 
     @AndroidFindBy(id = "changeTodoInput")
