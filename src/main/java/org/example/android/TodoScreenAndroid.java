@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class TodoScreenAndroid extends BasePageAndroid<LoginPageAndroid>{
-    private final By AddTodoButton = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"addButton\")");
-    private final By InputTodoField = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"todoInput\")");
+    private final By AddTodoButton = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"AddButton\")");
+    private final By InputTodoField = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"TodoInput\")");
     private final By InputTodoChangeField = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"changeTodoInput\")");
     private final By SaveTodoChangeButton = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"speichern\")");
     private final By CancelTodoChangeButton = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"abbrechen\")");

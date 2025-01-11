@@ -10,7 +10,7 @@ public class LoginPageAndroid extends BasePageAndroid<LoginPageAndroid>{
     private final By PasswortInput = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"PasswortInput\")");
     private final By ErrorText =AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"ErrorText\")");
     private final By LoginButton = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"LoginButton\")");
-    private final By InputTodoField = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"todoInput\")");
+    private final By InputTodoField = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"TodoInput\")");
     private final By ClearButtonUserName = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"clearButtonUserName\")");
     private final By ClearButtonPassword = AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"clearButtonPassword\")");
 
