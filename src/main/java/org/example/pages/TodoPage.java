@@ -31,9 +31,9 @@ public class TodoPage extends BasePage {
     @FindBy(id = "abbrechen")
     private WebElement abbrechen;
 
-    public static By todoNr(int todoNr) { return new By.ById("todoText " + todoNr); }
+    private static By todoNr(int todoNr) { return new By.ById("todoText " + todoNr); }
 
-    public static By deleteButtonNr(int todoNr) { return new By.ById("deleteButton " + todoNr);}
+    private static By deleteButtonNr(int todoNr) { return new By.ById("deleteButton " + todoNr);}
 
     @FindBy(id = "clearButton")
     private WebElement clearButton;
