@@ -35,12 +35,25 @@ public class TodoPage extends BasePage {
 
     private static By deleteButtonNr(int todoNr) { return new By.ById("deleteButton " + todoNr);}
 
+    private static By MarkTodoButton(int todoNr) { return new By.ById("MarkTodoButton " + todoNr);}
+    private static By UnMarkTodoButton(int todoNr) { return new By.ById("UnMarkTodoButton " + todoNr);}
+
     @FindBy(id = "clearButton")
     private WebElement clearButton;
 
     public TodoPage(AppiumDriver driver) {
         super(driver);
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+    }
+
+    public void markTodo(int todoIndex) {
+        click(MarkTodoButton(todoIndex));
+    }
+    public void unmarkTodo(int todoIndex) {
+        click(UnMarkTodoButton(todoIndex));
+    }
+    public Boolean isTodoMarked(int todoIndex) {
+        return isElementDisplayed(UnMarkTodoButton(todoIndex));
     }
 
     public void addTodo(String todo, int index) {
