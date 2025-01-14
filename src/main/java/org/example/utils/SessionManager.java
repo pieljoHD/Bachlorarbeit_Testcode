@@ -4,6 +4,9 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public final class SessionManager {
 
     private static SessionManager INSTANCE;
@@ -41,10 +44,16 @@ public final class SessionManager {
 
     public void closeApp() {
         if(driver != null) {
+            final Map<String, Object> appArgs = new HashMap<>();
             if(driver instanceof IOSDriver) {
-                ((IOSDriver) driver).terminateApp("jockel.BachlorarbeitTestapp");
+                appArgs.put("bundleId", "jockel.BachlorarbeitTestapp");
+                appArgs.put("timeout", 0);
+                driver.executeScript("mobile:terminateApp", appArgs);
             } else if(driver instanceof AndroidDriver) {
-                ((AndroidDriver) driver).terminateApp("com.example.todolisttestapplication");
+                appArgs.put("appId", "com.example.todolisttestapplication");
+                appArgs.put("timeout", 0);
+                driver.executeScript("mobile:terminateApp", appArgs);
+                System.out.println("Closing Android App");
             }
         }
     }
