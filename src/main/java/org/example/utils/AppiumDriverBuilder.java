@@ -16,7 +16,7 @@ public class AppiumDriverBuilder {
     private URL getHubUrl() {
         URL remoteAddress = null;
         try {
-            remoteAddress = new URL("http://127.0.0.1:4723/wd/hub");
+            remoteAddress = new URL("http://127.0.0.1:4723");
         } catch (MalformedURLException e) {
             Assert.fail("Selenium Grid address is malformed. Exception message: ", e);
         }
@@ -55,7 +55,7 @@ public class AppiumDriverBuilder {
         capabilities.setCapability("appium:maxTypingFrequency", 30);
         capabilities.setCapability("appium:udid", deviceId);
         capabilities.setCapability("appium:wdaLocalPort", wdaLocalPort);
-        capabilities.setCapability("appium:derivedDataPath","/Users/johannespielmeier/Library/Developer/Xcode/DerivedData");
+        capabilities.setCapability("appium:derivedDataPath","/Users/johannespielmeier/Library/Developer/Xcode/DerivedData"+deviceId);
         //let appium choose device
 
         return capabilities;
