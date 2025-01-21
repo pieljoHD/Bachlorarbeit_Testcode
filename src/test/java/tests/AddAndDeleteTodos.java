@@ -7,6 +7,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class AddAndDeleteTodos extends BaseTest {
 
     @Parameters("platform")
@@ -27,7 +30,9 @@ public class AddAndDeleteTodos extends BaseTest {
         todoScreen.deleteTodo(0);
         todoScreen.deleteTodo(1);
         todoScreen.todoHasTodo("TODO2", 0);
-
+        Map<String, String> params = new HashMap<>();
+        params.put("status", "passed");
+        driver.executeScript("devicefarm: setSessionStatus", params);
         driver.quit();
 
     }

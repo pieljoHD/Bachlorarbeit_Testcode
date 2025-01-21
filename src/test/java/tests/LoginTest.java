@@ -6,6 +6,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class LoginTest extends BaseTest {
     @Parameters("platform")
     @BeforeMethod
@@ -30,7 +33,9 @@ public class LoginTest extends BaseTest {
 
         loginPage.loginWithCredentials("test123","1234");
         loginPage.checkNotOnLoginPage();
-
+        Map<String, String> params = new HashMap<>();
+        params.put("status", "passed");
+        driver.executeScript("devicefarm: setSessionStatus", params);
         driver.quit();
     }
 }
