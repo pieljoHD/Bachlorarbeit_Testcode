@@ -1,5 +1,5 @@
 
-Finished test class:IOS Tests,Duration:149832ms
+Finished test class:IOS Tests,Duration:148832ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -7,7 +7,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:150347ms
+Finished test class:IOS Tests,Duration:151347ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -23,7 +23,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:149386ms
+Finished test class:IOS Tests,Duration:148386ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -47,7 +47,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:149827ms
+Finished test class:IOS Tests,Duration:151527ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -55,7 +55,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:149717ms
+Finished test class:IOS Tests,Duration:148717ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -63,7 +63,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:149373ms
+Finished test class:IOS Tests,Duration:149673ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -71,7 +71,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:149541ms
+Finished test class:IOS Tests,Duration:150541ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -87,7 +87,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:149211ms
+Finished test class:IOS Tests,Duration:149511ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -127,7 +127,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:150280ms
+Finished test class:IOS Tests,Duration:149280ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -135,7 +135,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:149873ms
+Finished test class:IOS Tests,Duration:149073ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -143,7 +143,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:149449ms
+Finished test class:IOS Tests,Duration:149049ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -151,7 +151,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:IOS Tests,Duration:150050ms
+Finished test class:IOS Tests,Duration:149750ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -215,7 +215,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:61598ms
+Finished test class:Android Tests,Duration:60598ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -239,7 +239,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:60630ms
+Finished test class:Android Tests,Duration:60930ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -255,7 +255,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:58821ms
+Finished test class:Android Tests,Duration:59821ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -263,7 +263,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:60892ms
+Finished test class:Android Tests,Duration:61192ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -271,7 +271,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:59941ms
+Finished test class:Android Tests,Duration:59641ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -279,7 +279,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:61028ms
+Finished test class:Android Tests,Duration:60328ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -311,7 +311,7 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
-Finished test class:Android Tests,Duration:59655ms
+Finished test class:Android Tests,Duration:60055ms
 Passed tests: 4
 Passed: " + result.getName()
 Passed: " + result.getName()
@@ -319,3 +319,10 @@ Passed: " + result.getName()
 Passed: " + result.getName()
 Failed tests: 0
 ------------------------------------------------------------------------
+---------------------------------END OF ALL TESTS---------------------------------
+Durchschnnittliche IOS Testzeit: 149508.66 ms
+Varianz IOS: 631265.1309051514
+Standardabweichung IOS: 794.5219511789157
+Durchschnnittliche Android Testzeit: 60320.4 ms
+Varianz Android: 320961.5390021801
+Standardabweichung Android: 566.5346759044676
